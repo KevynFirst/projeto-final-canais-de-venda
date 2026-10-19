@@ -1,0 +1,7 @@
+codigo,metrica,valor_simulado,faixa_min,faixa_max,referencia,fonte,status
+C1,Multiplicador da receita digital nominal 2019→2024 (Marketplace + Próprio),3.63504,3.21,13.4,"PAC Internet 20+ PO (217,91 ÷ 67,79 = 3,21); MDIC, MPE (67 ÷ 5 = 13,4) | recalculado: 3.21",IBGE PAC 9349/10656; MDIC (2025),OK
+C2,Razão da participação digital 2021 ÷ 2019,2.844371,1.87,4.0,"PAC (9,84 ÷ 5,26 = 1,87); teto = premissa | recalculado: 1.87",IBGE PAC 9349,OK
+C3,"Variação da receita real da Loja Física, abr/2020 vs fev/2020",-0.387061,,-0.15,"PMC 8880 volume com ajuste: −19,7% | recalculado: -19.7%",IBGE PMC 8880,OK
+C4,"Variação da receita real digital, abr/2020 vs fev/2020",0.87098,0.0,,migração para o digital,Sebrae (2021),OK
+C5,Participação digital na receita real no Cenário Atual (2025–2026),0.333079,0.25,0.45,1/3 dos MEI online com > 50% do faturamento online; faixa = premissa,Sebrae (2021),OK
+C6,Take rate do Marketplace no Cenário Atual (2025–2026),0.142172,0.1,0.19,faixas Clássico (10–14%) e Premium (15–19%) do Mercado Livre,Mercado Livre (2026),OK

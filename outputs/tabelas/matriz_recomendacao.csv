@@ -1,0 +1,11 @@
+porte,segmento,canal_1,margem_1,canal_2,margem_2,vantagem_pp,recomendacao
+MEI,Moda e Acessórios,E-commerce Próprio,604.72,Marketplace,506.82,2.05099,E-commerce Próprio
+MEI,Casa e Decoração,E-commerce Próprio,335.16,Marketplace,275.51,1.371029,E-commerce Próprio
+MEI,Eletrônicos e Acessórios,E-commerce Próprio,234.05,Loja Física,41.19,5.172864,E-commerce Próprio
+MEI,Beleza e Cuidados Pessoais,Loja Física,196.69,E-commerce Próprio,195.22,0.033433,Híbrido: Loja Física + E-commerce Próprio
+MEI,Alimentos e Bebidas,Loja Física,584.66,E-commerce Próprio,495.54,1.556654,Loja Física
+ME,Moda e Acessórios,E-commerce Próprio,1916.1,Marketplace,1613.79,1.463796,E-commerce Próprio
+ME,Casa e Decoração,Marketplace,978.84,E-commerce Próprio,836.55,0.735451,Híbrido: Marketplace + E-commerce Próprio
+ME,Eletrônicos e Acessórios,E-commerce Próprio,713.22,Loja Física,-134.28,5.048433,E-commerce Próprio
+ME,Beleza e Cuidados Pessoais,E-commerce Próprio,253.03,Loja Física,237.63,0.080325,Híbrido: E-commerce Próprio + Loja Física
+ME,Alimentos e Bebidas,Loja Física,1421.38,E-commerce Próprio,1232.48,0.759358,Híbrido: Loja Física + E-commerce Próprio

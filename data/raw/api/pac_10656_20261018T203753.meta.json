@@ -1,0 +1,13 @@
+{
+  "fonte_id": "pac_10656",
+  "fonte": "IBGE/SIDRA — PAC, tabela 10656 (2024, série nova)",
+  "endpoint": "https://apisidra.ibge.gov.br/values/t/10656/n1/all/v/540,866/p/all/c12352/all/c11070/83337,83341,83342,83346,83347,83348,83349,83351,83353,83354",
+  "parametros": {},
+  "obtido_em": "2026-10-18T20:37:53-03:00",
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "tentativas": 1,
+  "linhas": 141,
+  "arquivo_dados": "pac_10656_20261018T203753.json",
+  "sha256": "474ae2dfb6875f3931ef2f02896d6cbedddeac7d5bb9c31351bd28230d078005"
+}

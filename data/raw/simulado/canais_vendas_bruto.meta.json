@@ -1,0 +1,7729 @@
+{
+  "descricao": "Gabarito da injeção de problemas de qualidade no painel simulado (não é dado real).",
+  "semente_simulacao": 2026,
+  "semente_problemas": 2027,
+  "versao_modelo": "1.0",
+  "snapshots_usados": [
+    "ipca_sidra_1737_20261018T203752.json",
+    "pac_10656_20261018T203753.json",
+    "pac_9349_20261018T203753.json",
+    "pmc_8880_20261018T203645.json",
+    "pmc_8882_20261018T203646.json"
+  ],
+  "data_inicio": "2018-01-01",
+  "data_fim": "2026-08-01",
+  "linhas_limpas": 3120,
+  "linhas_brutas": 3183,
+  "arquivo": "canais_vendas_bruto.csv",
+  "sha256": "5d6f1ea40ac975139efc303b62f1694364407091fa5b925baf3b8803c934719d",
+  "gerado_em": "2026-10-18T22:11:15-03:00",
+  "duplicatas_exatas": 47,
+  "duplicatas_formatadas": 16,
+  "datas_por_formato": {
+    "AAAA-MM": 1884,
+    "MM/AAAA": 790,
+    "AAAA-MM-01": 446
+  },
+  "rotulos_por_variante": {
+    "canal": {
+      "E-COMMERCE PRÓPRIO": 61,
+      "E-commerce próprio": 50,
+      "Físico": 49,
+      "LOJA FÍSICA ": 52,
+      "Loja Virtual Própria": 47,
+      "Loja física": 56,
+      "MARKETPLACE": 47,
+      "MKT": 53,
+      "Mkt place": 47,
+      "ecommerce proprio": 47,
+      "loja fisica": 44,
+      "marketplace ": 48
+    },
+    "porte": {
+      "Microempreendedor Individual": 73,
+      "Microempresa": 89,
+      "me": 83,
+      "mei": 68
+    },
+    "segmento": {
+      "  Alimentos e  Bebidas ": 34,
+      "  Beleza e  Cuidados Pessoais ": 26,
+      "  Casa e  Decoração ": 27,
+      "  Eletrônicos e  Acessórios ": 37,
+      "  Moda e  Acessórios ": 31,
+      "alimentos e bebidas": 33,
+      "beleza e cuidados pessoais": 31,
+      "casa e decoracao": 50,
+      "eletronicos e acessorios": 31,
+      "moda e acessorios": 30
+    }
+  },
+  "celulas_ausentes_por_coluna": {
+    "negocios_ativos": 78,
+    "receita_bruta": 78,
+    "pedidos": 78,
+    "clientes_ativos": 78,
+    "clientes_novos": 78,
+    "clientes_recorrentes": 78,
+    "clientes_ativos_mes_anterior": 78,
+    "investimento_marketing": 78,
+    "comissoes_tarifas": 78,
+    "frete_subsidiado": 78,
+    "cmv": 78,
+    "custos_fixos": 78,
+    "impostos_fixos": 78,
+    "impostos_variaveis": 78
+  },
+  "celulas_ausentes_total": 1092,
+  "numeros_formato_br": {
+    "moeda_br": 8507,
+    "moeda_br_com_cifrao": 1184,
+    "contagem_com_milhar": 1096
+  },
+  "celulas_ausentes": [
+    {
+      "data": "2023-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2026-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2022-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2020-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2025-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2019-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2021-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2026-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2026-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2022-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2023-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2018-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2019-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2020-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2021-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2019-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2020-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2023-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2019-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2025-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2023-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2023-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2022-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2026-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2026-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2026-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2022-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2019-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2024-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2022-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2024-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2021-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2019-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2021-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2026-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2026-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2020-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2022-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2019-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2021-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2025-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2020-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2021-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2024-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2019-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2026-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2025-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2024-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2020-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2019-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2023-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2025-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2023-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2021-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2023-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2021-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2026-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2025-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2026-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2025-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2025-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2019-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2023-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2021-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2020-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2021-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2021-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2020-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2018-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2020-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2019-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2026-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2026-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2021-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2020-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2022-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2024-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2021-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2018-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2021-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2018-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2022-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2018-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2020-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2022-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2022-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2025-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2022-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2025-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2022-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2021-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2021-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2026-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2025-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2025-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2026-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2019-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2023-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2018-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2026-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2019-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2023-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2023-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2026-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2018-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2021-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2022-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2021-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2025-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2026-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2022-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2019-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2024-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2021-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2019-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2026-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2024-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2019-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2020-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2026-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2019-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2020-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2021-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2019-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2025-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2020-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2026-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2019-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2020-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2026-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2020-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2019-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2021-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2026-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2026-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2026-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2025-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2025-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2023-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2018-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2021-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2026-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2023-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2021-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2018-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2021-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2021-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2022-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2026-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2026-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2021-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2026-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2025-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2022-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2019-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2022-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2023-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2026-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2026-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2019-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2020-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2026-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2022-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2026-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2023-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2022-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2020-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2020-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2021-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2021-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2021-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2025-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2020-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2026-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2024-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2020-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2021-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2019-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2022-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2021-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2021-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2024-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2023-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2022-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2025-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2023-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2024-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2020-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2021-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2019-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2021-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2019-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2021-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2022-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2019-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2025-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2026-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2021-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2018-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2024-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2020-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2023-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2023-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2025-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2025-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2023-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2025-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2025-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2026-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2023-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2018-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2022-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2024-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2020-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2019-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2020-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2018-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2026-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2022-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2021-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2021-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2026-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-01-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2018-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2018-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2024-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2018-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-11-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2025-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2019-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2023-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2026-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2021-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2026-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2021-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2021-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2019-12-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2025-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2023-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2026-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2020-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2019-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2023-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2025-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2021-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2019-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2021-01-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2024-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2019-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2025-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2022-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2022-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2019-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2021-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2021-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2024-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2019-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2026-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2023-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2021-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2020-01-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2018-03-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2020-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2020-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2024-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2022-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2024-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2019-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2024-12-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2018-05-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2019-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2019-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2021-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2026-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2019-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2023-06-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2022-02-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2021-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2019-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2019-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2025-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2023-04-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-07-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2024-11-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-06-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2018-09-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2021-08-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2026-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2022-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-01-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "custos_fixos"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2025-01-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-07-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2025-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2026-02-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "impostos_fixos"
+    },
+    {
+      "data": "2018-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2018-09-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2025-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2020-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2022-10-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2022-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2022-09-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2018-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2026-03-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2020-05-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2025-03-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2019-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2019-06-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "impostos_variaveis"
+    },
+    {
+      "data": "2020-02-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2024-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2018-10-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2024-06-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2023-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "clientes_ativos_mes_anterior"
+    },
+    {
+      "data": "2018-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2018-04-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2020-07-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2021-04-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2023-09-01",
+      "canal": "Loja Física",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "pedidos"
+    },
+    {
+      "data": "2018-11-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2020-08-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2022-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "receita_bruta"
+    },
+    {
+      "data": "2019-11-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2022-12-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "negocios_ativos"
+    },
+    {
+      "data": "2020-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Alimentos e Bebidas",
+      "coluna": "cmv"
+    },
+    {
+      "data": "2025-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Eletrônicos e Acessórios",
+      "coluna": "clientes_recorrentes"
+    },
+    {
+      "data": "2023-05-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Moda e Acessórios",
+      "coluna": "comissoes_tarifas"
+    },
+    {
+      "data": "2025-08-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Moda e Acessórios",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2023-03-01",
+      "canal": "E-commerce Próprio",
+      "porte": "MEI",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_novos"
+    },
+    {
+      "data": "2025-02-01",
+      "canal": "Marketplace",
+      "porte": "MEI",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2018-03-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "frete_subsidiado"
+    },
+    {
+      "data": "2019-07-01",
+      "canal": "Loja Física",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "investimento_marketing"
+    },
+    {
+      "data": "2023-07-01",
+      "canal": "Marketplace",
+      "porte": "ME",
+      "segmento": "Casa e Decoração",
+      "coluna": "clientes_ativos"
+    },
+    {
+      "data": "2019-04-01",
+      "canal": "E-commerce Próprio",
+      "porte": "ME",
+      "segmento": "Beleza e Cuidados Pessoais",
+      "coluna": "custos_fixos"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+porte,canal,componente,pct_receita
+MEI,Loja Física,cmv,0.605225
+MEI,Loja Física,comissoes_tarifas,0.013668
+MEI,Loja Física,frete_subsidiado,0.0
+MEI,Loja Física,investimento_marketing,0.029502
+MEI,Loja Física,custos_fixos,0.244952
+MEI,Loja Física,impostos,0.01533
+MEI,Loja Física,margem_liquida,0.091324
+MEI,Marketplace,cmv,0.588016
+MEI,Marketplace,comissoes_tarifas,0.141932
+MEI,Marketplace,frete_subsidiado,0.057705
+MEI,Marketplace,investimento_marketing,0.068573
+MEI,Marketplace,custos_fixos,0.089287
+MEI,Marketplace,impostos,0.02013
+MEI,Marketplace,margem_liquida,0.034357
+MEI,E-commerce Próprio,cmv,0.58291
+MEI,E-commerce Próprio,comissoes_tarifas,0.028176
+MEI,E-commerce Próprio,frete_subsidiado,0.0836
+MEI,E-commerce Próprio,investimento_marketing,0.111604
+MEI,E-commerce Próprio,custos_fixos,0.115958
+MEI,E-commerce Próprio,impostos,0.021227
+MEI,E-commerce Próprio,margem_liquida,0.056525
+ME,Loja Física,cmv,0.604094
+ME,Loja Física,comissoes_tarifas,0.01367
+ME,Loja Física,frete_subsidiado,0.0
+ME,Loja Física,investimento_marketing,0.030116
+ME,Loja Física,custos_fixos,0.261448
+ME,Loja Física,impostos,0.049805
+ME,Loja Física,margem_liquida,0.040866
+ME,Marketplace,cmv,0.58941
+ME,Marketplace,comissoes_tarifas,0.14246
+ME,Marketplace,frete_subsidiado,0.058097
+ME,Marketplace,investimento_marketing,0.069162
+ME,Marketplace,custos_fixos,0.078076
+ME,Marketplace,impostos,0.044332
+ME,Marketplace,margem_liquida,0.018463
+ME,E-commerce Próprio,cmv,0.583394
+ME,E-commerce Próprio,comissoes_tarifas,0.028168
+ME,E-commerce Próprio,frete_subsidiado,0.083831
+ME,E-commerce Próprio,investimento_marketing,0.11351
+ME,E-commerce Próprio,custos_fixos,0.099642
+ME,E-commerce Próprio,impostos,0.046576
+ME,E-commerce Próprio,margem_liquida,0.044878

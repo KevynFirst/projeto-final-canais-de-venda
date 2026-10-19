@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Ambientes virtuais
+.venv/
+venv/
+
+# Logs de execução do pipeline
+outputs/logs/
+
+# Notebooks e sistema
+.ipynb_checkpoints/
+Thumbs.db
+.DS_Store
+*.tmp
+
+# Material de apoio local (não vai para o repositório)
+DASHBOARD_GUIDE.md

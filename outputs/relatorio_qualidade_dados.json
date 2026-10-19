@@ -1,0 +1,219 @@
+{
+  "dados_reais": {
+    "pmc_8880": {
+      "linhas": 420,
+      "valores_nao_numericos": {
+        "-": 0,
+        "X": 0,
+        "..": 0,
+        "...": 0
+      },
+      "duplicatas_removidas": 0,
+      "snapshot": "pmc_8880_20261018T203645.json",
+      "obtido_em": "2026-10-18T20:36:45-03:00",
+      "cobertura": {
+        "inicio": "2017-12",
+        "fim": "2026-08",
+        "meses": 105
+      }
+    },
+    "pmc_8882": {
+      "linhas": 2100,
+      "valores_nao_numericos": {
+        "-": 0,
+        "X": 0,
+        "..": 0,
+        "...": 0
+      },
+      "duplicatas_removidas": 0,
+      "snapshot": "pmc_8882_20261018T203646.json",
+      "obtido_em": "2026-10-18T20:36:46-03:00",
+      "cobertura": {
+        "inicio": "2017-12",
+        "fim": "2026-08",
+        "meses": 105
+      }
+    },
+    "ipca_sidra_1737": {
+      "linhas": 105,
+      "valores_nao_numericos": {
+        "-": 0,
+        "X": 0,
+        "..": 0,
+        "...": 0
+      },
+      "duplicatas_removidas": 0,
+      "snapshot": "ipca_sidra_1737_20261018T203752.json",
+      "obtido_em": "2026-10-18T20:37:52-03:00",
+      "cobertura": {
+        "inicio": "2018-01",
+        "fim": "2026-09",
+        "meses": 105
+      }
+    },
+    "pac_9349": {
+      "linhas": 560,
+      "valores_nao_numericos": {
+        "-": 56,
+        "X": 25,
+        "..": 0,
+        "...": 0
+      },
+      "duplicatas_removidas": 0,
+      "snapshot": "pac_9349_20261018T203753.json",
+      "obtido_em": "2026-10-18T20:37:53-03:00"
+    },
+    "pac_10656": {
+      "linhas": 140,
+      "valores_nao_numericos": {
+        "-": 24,
+        "X": 14,
+        "..": 0,
+        "...": 0
+      },
+      "duplicatas_removidas": 0,
+      "snapshot": "pac_10656_20261018T203753.json",
+      "obtido_em": "2026-10-18T20:37:53-03:00"
+    },
+    "ipca_escolhido": {
+      "fonte_ipca": "IBGE SIDRA 1737",
+      "cobertura": {
+        "inicio": "2018-01",
+        "fim": "2026-09",
+        "meses": 105
+      },
+      "bcb_433_disponivel": false
+    },
+    "pac_internet": {
+      "linhas": 42,
+      "situacao": {
+        "ok": 25,
+        "sigilo": 17
+      },
+      "anos": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    }
+  },
+  "painel_simulado": {
+    "antes": {
+      "linhas": 3183,
+      "colunas": 18,
+      "nulos_por_coluna": {
+        "mes_referencia": 0,
+        "canal": 0,
+        "porte": 0,
+        "segmento": 0,
+        "negocios_ativos": 80,
+        "receita_bruta": 80,
+        "pedidos": 80,
+        "clientes_ativos": 78,
+        "clientes_novos": 80,
+        "clientes_recorrentes": 79,
+        "clientes_ativos_mes_anterior": 81,
+        "investimento_marketing": 78,
+        "comissoes_tarifas": 79,
+        "frete_subsidiado": 80,
+        "cmv": 79,
+        "custos_fixos": 78,
+        "impostos_fixos": 80,
+        "impostos_variaveis": 81
+      },
+      "formatos_data": {
+        "AAAA-MM": 1914,
+        "MM/AAAA": 808,
+        "AAAA-MM-01": 461
+      },
+      "numeros_formato_br": {
+        "moeda_br": 8663,
+        "moeda_br_com_cifrao": 1205,
+        "contagem_com_milhar": 1120
+      },
+      "rotulos_variantes": {
+        "canal": {
+          "E-COMMERCE PRÓPRIO": 61,
+          "E-commerce próprio": 52,
+          "Físico": 51,
+          "LOJA FÍSICA ": 53,
+          "Loja Virtual Própria": 48,
+          "Loja física": 57,
+          "MARKETPLACE": 49,
+          "MKT": 56,
+          "Mkt place": 47,
+          "ecommerce proprio": 48,
+          "loja fisica": 48,
+          "marketplace ": 51
+        },
+        "porte": {
+          "Microempreendedor Individual": 74,
+          "Microempresa": 90,
+          "me": 85,
+          "mei": 69
+        },
+        "segmento": {
+          "  Alimentos e  Bebidas ": 34,
+          "  Beleza e  Cuidados Pessoais ": 27,
+          "  Casa e  Decoração ": 29,
+          "  Eletrônicos e  Acessórios ": 39,
+          "  Moda e  Acessórios ": 31,
+          "alimentos e bebidas": 33,
+          "beleza e cuidados pessoais": 32,
+          "casa e decoracao": 53,
+          "eletronicos e acessorios": 32,
+          "moda e acessorios": 31
+        }
+      },
+      "duplicatas_exatas": 47
+    },
+    "depois": {
+      "linhas": 3120,
+      "nulos_total": 0,
+      "duplicatas_chave": 0,
+      "duplicatas_chave_removidas": 16,
+      "celulas_ausentes_antes_imputacao": 1092,
+      "imputacoes_por_coluna": {
+        "negocios_ativos": 78,
+        "receita_bruta": 78,
+        "pedidos": 78,
+        "clientes_ativos": 78,
+        "clientes_novos": 78,
+        "clientes_recorrentes": 78,
+        "clientes_ativos_mes_anterior": 78,
+        "investimento_marketing": 78,
+        "comissoes_tarifas": 78,
+        "frete_subsidiado": 78,
+        "cmv": 78,
+        "custos_fixos": 78,
+        "impostos_fixos": 78,
+        "impostos_variaveis": 78
+      },
+      "imputacoes_por_metodo": {
+        "defasagem": 78,
+        "identidade_clientes": 234,
+        "razao_cac": 78,
+        "razao_cmv": 78,
+        "razao_frequencia": 78,
+        "razao_negocio": 156,
+        "razao_receita": 284,
+        "regra_das": 34,
+        "regra_porte": 72
+      },
+      "total_imputado": 1092,
+      "divergencias_defasagem": 0,
+      "linhas_com_imputacao": 1092
+    },
+    "conferencia_gabarito": {
+      "duplicatas_exatas": true,
+      "duplicatas_chave": true,
+      "celulas_imputadas": true,
+      "conjunto_celulas": true,
+      "linhas_limpas": true
+    },
+    "arquivo_bruto": "data/raw/simulado/canais_vendas_bruto.csv"
+  }
+}

@@ -1,0 +1,7 @@
+porte,canal_a,canal_b,r_estrela,vencedor_abaixo,vencedor_acima,situacao
+MEI,Loja Física,Marketplace,4382.43,Marketplace,Loja Física,cruzamento
+MEI,Loja Física,E-commerce Próprio,5256.34,E-commerce Próprio,Loja Física,cruzamento
+MEI,Marketplace,E-commerce Próprio,1619.18,Marketplace,E-commerce Próprio,cruzamento
+ME,Loja Física,Marketplace,20599.49,Marketplace,Loja Física,cruzamento
+ME,Loja Física,E-commerce Próprio,23443.58,E-commerce Próprio,Loja Física,cruzamento
+ME,Marketplace,E-commerce Próprio,11246.39,Marketplace,E-commerce Próprio,cruzamento

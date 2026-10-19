@@ -1,0 +1,13 @@
+{
+  "fonte_id": "ipca_sidra_1737",
+  "fonte": "IBGE/SIDRA — IPCA, tabela 1737, variável 63",
+  "endpoint": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/63/p/201801-202609",
+  "parametros": {},
+  "obtido_em": "2026-10-18T20:37:52-03:00",
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "tentativas": 1,
+  "linhas": 106,
+  "arquivo_dados": "ipca_sidra_1737_20261018T203752.json",
+  "sha256": "f5c9b7eb9e066830011326056bafc643ed6f9970c51d2ea9d19032ed2fef68f8"
+}

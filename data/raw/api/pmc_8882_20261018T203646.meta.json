@@ -1,0 +1,13 @@
+{
+  "fonte_id": "pmc_8882",
+  "fonte": "IBGE/SIDRA — PMC, tabela 8882 (atividades, 2022 = 100)",
+  "endpoint": "https://apisidra.ibge.gov.br/values/t/8882/n1/all/v/7169,7170/p/201712-202609/c11046/56733,56734/c85/90672,90673,2759,103155,103157",
+  "parametros": {},
+  "obtido_em": "2026-10-18T20:36:46-03:00",
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "tentativas": 1,
+  "linhas": 2101,
+  "arquivo_dados": "pmc_8882_20261018T203646.json",
+  "sha256": "913aec952624b32c8018caba84892dda28f006727aa0783d839d211dbb753d3e"
+}

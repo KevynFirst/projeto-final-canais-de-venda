@@ -1,0 +1,13 @@
+{
+  "fonte_id": "pac_9349",
+  "fonte": "IBGE/SIDRA — PAC, tabela 9349 (2019–2023)",
+  "endpoint": "https://apisidra.ibge.gov.br/values/t/9349/n1/all/v/540,866/p/all/c12352/all/c11070/106721,106725,106726,106727,7129,7130,7131,7133",
+  "parametros": {},
+  "obtido_em": "2026-10-18T20:37:53-03:00",
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "tentativas": 1,
+  "linhas": 561,
+  "arquivo_dados": "pac_9349_20261018T203753.json",
+  "sha256": "e8be35b7c5e7092ab4a504a4998c81175eb5631530b6e06663c5d7a9b4ea8336"
+}

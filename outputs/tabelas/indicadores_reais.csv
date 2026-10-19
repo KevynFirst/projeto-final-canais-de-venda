@@ -1,0 +1,82 @@
+indicador,ano,segmento,valor,unidade,fonte
+pmc_variacao_volume_sa_abr2020_vs_fev2020,2020,Total,-19.67304,%,IBGE PMC 8880
+pmc_indice_volume_sa_ago/2026,2026,Total,108.68976,índice 2022 = 100,IBGE PMC 8880
+pmc_variacao_volume_nsa_abr2020_vs_fev2020,2020,Moda e Acessórios,-79.511346,%,IBGE PMC 8882
+pmc_variacao_volume_nsa_abr2020_vs_fev2020,2020,Casa e Decoração,-40.390531,%,IBGE PMC 8882
+pmc_variacao_volume_nsa_abr2020_vs_fev2020,2020,Eletrônicos e Acessórios,-41.562712,%,IBGE PMC 8882
+pmc_variacao_volume_nsa_abr2020_vs_fev2020,2020,Beleza e Cuidados Pessoais,-11.614086,%,IBGE PMC 8882
+pmc_variacao_volume_nsa_abr2020_vs_fev2020,2020,Alimentos e Bebidas,3.489405,%,IBGE PMC 8882
+ipca_acumulado (jan/2018–ago/2026),2026,Total,55.257897,%,IBGE SIDRA 1737
+ipca_fator_acumulado (jan/2018–ago/2026),2026,Total,1.552579,fator,IBGE SIDRA 1737
+teto_mei_poder_compra_dez2017,2026,Total,52171.259377,R$ de dez/2017,IBGE SIDRA 1737
+teto_mei_corrigido_pelo_ipca,2026,Total,125758.896342,R$ de ago/2026,IBGE SIDRA 1737
+ipca_acumulado_12m_dezembro,2018,Total,3.745482,%,IBGE SIDRA 1737
+ipca_acumulado_12m_dezembro,2019,Total,4.30604,%,IBGE SIDRA 1737
+ipca_acumulado_12m_dezembro,2020,Total,4.517342,%,IBGE SIDRA 1737
+ipca_acumulado_12m_dezembro,2021,Total,10.061055,%,IBGE SIDRA 1737
+ipca_acumulado_12m_dezembro,2022,Total,5.784842,%,IBGE SIDRA 1737
+ipca_acumulado_12m_dezembro,2023,Total,4.621114,%,IBGE SIDRA 1737
+ipca_acumulado_12m_dezembro,2024,Total,4.831296,%,IBGE SIDRA 1737
+ipca_acumulado_12m_dezembro,2025,Total,4.264385,%,IBGE SIDRA 1737
+ipca_acumulado_12m_maximo (abr/2022),2022,Total,12.131481,%,IBGE SIDRA 1737
+pac_participacao_internet_varejo,2019,Total,5.258802,%,IBGE PAC 9349 (2019–2023)
+pac_receita_internet_varejo,2019,Total,67792343.0,mil R$,IBGE PAC 9349 (2019–2023)
+pac_empresas_vendendo_internet,2019,Total,1888.0,empresas,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2019,Moda e Acessórios,,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2019,Casa e Decoração,9.449994,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2019,Eletrônicos e Acessórios,,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2019,Beleza e Cuidados Pessoais,2.776101,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2019,Alimentos e Bebidas,4.332007,%,IBGE PAC 9349 (2019–2023)
+pac_concentracao_internet_classe_nao_especializada,2019,Total,29.673744,%,IBGE PAC 9349 (2019–2023)
+pac_empresas_internet_classe_nao_especializada,2019,Total,32.0,empresas,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_varejo,2020,Total,8.356199,%,IBGE PAC 9349 (2019–2023)
+pac_receita_internet_varejo,2020,Total,116780879.0,mil R$,IBGE PAC 9349 (2019–2023)
+pac_empresas_vendendo_internet,2020,Total,2768.0,empresas,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2020,Moda e Acessórios,17.009037,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2020,Casa e Decoração,16.267849,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2020,Eletrônicos e Acessórios,38.649686,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2020,Beleza e Cuidados Pessoais,,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2020,Alimentos e Bebidas,,%,IBGE PAC 9349 (2019–2023)
+pac_concentracao_internet_classe_nao_especializada,2020,Total,28.927319,%,IBGE PAC 9349 (2019–2023)
+pac_empresas_internet_classe_nao_especializada,2020,Total,59.0,empresas,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_varejo,2021,Total,9.835564,%,IBGE PAC 9349 (2019–2023)
+pac_receita_internet_varejo,2021,Total,161439731.0,mil R$,IBGE PAC 9349 (2019–2023)
+pac_empresas_vendendo_internet,2021,Total,3100.0,empresas,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2021,Moda e Acessórios,14.599867,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2021,Casa e Decoração,19.632817,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2021,Eletrônicos e Acessórios,44.878388,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2021,Beleza e Cuidados Pessoais,5.853842,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2021,Alimentos e Bebidas,4.842572,%,IBGE PAC 9349 (2019–2023)
+pac_concentracao_internet_classe_nao_especializada,2021,Total,35.116708,%,IBGE PAC 9349 (2019–2023)
+pac_empresas_internet_classe_nao_especializada,2021,Total,64.0,empresas,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_varejo,2022,Total,9.108655,%,IBGE PAC 9349 (2019–2023)
+pac_receita_internet_varejo,2022,Total,171596308.0,mil R$,IBGE PAC 9349 (2019–2023)
+pac_empresas_vendendo_internet,2022,Total,3340.0,empresas,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2022,Moda e Acessórios,,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2022,Casa e Decoração,,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2022,Eletrônicos e Acessórios,40.680248,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2022,Beleza e Cuidados Pessoais,7.277487,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2022,Alimentos e Bebidas,5.666955,%,IBGE PAC 9349 (2019–2023)
+pac_concentracao_internet_classe_nao_especializada,2022,Total,32.488011,%,IBGE PAC 9349 (2019–2023)
+pac_empresas_internet_classe_nao_especializada,2022,Total,69.0,empresas,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_varejo,2023,Total,8.769812,%,IBGE PAC 9349 (2019–2023)
+pac_receita_internet_varejo,2023,Total,177574409.0,mil R$,IBGE PAC 9349 (2019–2023)
+pac_empresas_vendendo_internet,2023,Total,3730.0,empresas,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2023,Moda e Acessórios,13.407063,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2023,Casa e Decoração,,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2023,Eletrônicos e Acessórios,40.291087,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2023,Beleza e Cuidados Pessoais,7.868326,%,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_segmento,2023,Alimentos e Bebidas,4.993216,%,IBGE PAC 9349 (2019–2023)
+pac_concentracao_internet_classe_nao_especializada,2023,Total,32.357965,%,IBGE PAC 9349 (2019–2023)
+pac_empresas_internet_classe_nao_especializada,2023,Total,68.0,empresas,IBGE PAC 9349 (2019–2023)
+pac_participacao_internet_varejo,2024,Total,9.782238,%,"IBGE PAC 10656 (2024, série nova)"
+pac_receita_internet_varejo,2024,Total,217913978.0,mil R$,"IBGE PAC 10656 (2024, série nova)"
+pac_empresas_vendendo_internet,2024,Total,3850.0,empresas,"IBGE PAC 10656 (2024, série nova)"
+pac_participacao_internet_segmento,2024,Moda e Acessórios,,%,"IBGE PAC 10656 (2024, série nova)"
+pac_participacao_internet_segmento,2024,Casa e Decoração,,%,"IBGE PAC 10656 (2024, série nova)"
+pac_participacao_internet_segmento,2024,Eletrônicos e Acessórios,,%,"IBGE PAC 10656 (2024, série nova)"
+pac_participacao_internet_segmento,2024,Beleza e Cuidados Pessoais,,%,"IBGE PAC 10656 (2024, série nova)"
+pac_participacao_internet_segmento,2024,Alimentos e Bebidas,5.200247,%,"IBGE PAC 10656 (2024, série nova)"
+pac_concentracao_internet_classe_nao_especializada,2024,Total,35.524352,%,"IBGE PAC 10656 (2024, série nova)"
+pac_empresas_internet_classe_nao_especializada,2024,Total,63.0,empresas,"IBGE PAC 10656 (2024, série nova)"
+pac_multiplicador_receita_internet_2019_2024,2024,Total,3.214433,vezes,IBGE PAC 9349 e 10656

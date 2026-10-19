@@ -1,0 +1,37 @@
+porte,segmento,canal,v,F,PE,R_ref
+MEI,Todos,Loja Física,0.648394,1340.25,3811.8,4592.23
+MEI,Todos,Marketplace,0.856226,429.44,2986.93,4592.23
+MEI,Todos,E-commerce Próprio,0.80629,510.3,2634.34,4592.23
+ME,Todos,Loja Física,0.697686,5586.8,18480.16,20164.71
+ME,Todos,Marketplace,0.903461,1347.95,13962.75,20164.71
+ME,Todos,E-commerce Próprio,0.855479,1887.57,13060.91,20164.71
+MEI,Moda e Acessórios,Loja Física,0.598922,1429.19,3563.37,4773.72
+MEI,Moda e Acessórios,Marketplace,0.799817,448.8,2241.96,4773.72
+MEI,Moda e Acessórios,E-commerce Próprio,0.761481,533.9,2238.39,4773.72
+MEI,Casa e Decoração,Loja Física,0.646957,1429.15,4048.09,4350.83
+MEI,Casa e Decoração,Marketplace,0.833524,448.8,2695.9,4350.83
+MEI,Casa e Decoração,E-commerce Próprio,0.800253,533.91,2672.92,4350.83
+MEI,Eletrônicos e Acessórios,Loja Física,0.641888,1293.91,3613.13,3728.17
+MEI,Eletrônicos e Acessórios,Marketplace,0.887811,411.83,3670.83,3728.17
+MEI,Eletrônicos e Acessórios,E-commerce Próprio,0.806218,488.4,2520.38,3728.17
+MEI,Beleza e Cuidados Pessoais,Loja Física,0.644538,1361.72,3830.85,4384.17
+MEI,Beleza e Cuidados Pessoais,Marketplace,0.886676,430.32,3797.27,4384.17
+MEI,Beleza e Cuidados Pessoais,E-commerce Próprio,0.838867,511.21,3172.63,4384.17
+MEI,Alimentos e Bebidas,Loja Física,0.683578,1226.88,3877.35,5725.06
+MEI,Alimentos e Bebidas,Marketplace,0.894197,393.33,3717.54,5725.06
+MEI,Alimentos e Bebidas,E-commerce Próprio,0.832109,465.65,2773.52,5725.06
+ME,Moda e Acessórios,Loja Física,0.648265,5969.27,16970.92,20652.44
+ME,Moda e Acessórios,Marketplace,0.852999,1422.14,9674.33,20652.44
+ME,Moda e Acessórios,E-commerce Próprio,0.810815,1991.04,10524.27,20652.44
+ME,Casa e Decoração,Loja Física,0.696006,5969.72,19637.63,19347.35
+ME,Casa e Decoração,Marketplace,0.8759,1422.17,11459.84,19347.35
+ME,Casa e Decoração,E-commerce Próprio,0.853815,1991.74,13624.81,19347.35
+ME,Eletrônicos e Acessórios,Loja Física,0.687967,5372.48,17217.7,16787.37
+ME,Eletrônicos e Acessórios,Marketplace,0.932067,1279.91,18840.84,16787.37
+ME,Eletrônicos e Acessórios,E-commerce Próprio,0.850734,1792.57,12009.19,16787.37
+ME,Beleza e Cuidados Pessoais,Loja Física,0.691645,5671.23,18391.93,19162.58
+ME,Beleza e Cuidados Pessoais,Marketplace,0.930139,1351.03,19338.93,19162.58
+ME,Beleza e Cuidados Pessoais,E-commerce Próprio,0.888071,1891.81,16901.97,19162.58
+ME,Alimentos e Bebidas,Loja Física,0.738854,5074.92,19433.3,24876.17
+ME,Alimentos e Bebidas,Marketplace,0.947249,1208.43,22908.3,24876.17
+ME,Alimentos e Bebidas,E-commerce Próprio,0.882427,1692.29,14393.49,24876.17

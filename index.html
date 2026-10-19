@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transição de Canais de Venda — Projeto Final | Kevyn Bezerra Ladislau</title>
+  <meta name="author" content="Kevyn Bezerra Ladislau">
+  <meta name="description"
+    content="Portfólio de Kevyn Bezerra Ladislau, Analista de Dados: mapa de aprendizado do curso de Analista de Dados da EBAC e projeto final sobre a transição de canais de venda (loja física, marketplace e e-commerce próprio) de MEIs e MEs no Brasil.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0B1020">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob--azul"></span>
+    <span class="blob blob--verde"></span>
+    <span class="blob blob--roxo"></span>
+  </div>
+
+  <header class="site-header glass" id="topo">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio">
+        <svg class="brand__icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+          <path d="M4 19V11M10 19V5M16 19v-6M22 19H2" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" />
+        </svg>
+        <span>Projeto Final</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul class="nav-list" id="menu-principal">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#aprendizado">Aprendizado</a></li>
+          <li><a href="#projeto">Projeto</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#graficos">Gráficos</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#relatorios">Relatórios</a></li>
+          <li><a href="#conclusao">Conclusão</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero__inner">
+        <p class="hero__autor"><span class="dot" aria-hidden="true"></span>Kevyn Bezerra Ladislau · Analista de Dados
+        </p>
+        <h1 id="hero-titulo">Loja física, marketplace ou e-commerce próprio?</h1>
+        <p class="hero__sub">Projeto final de análise de dados sobre a transição de canais de venda de MEIs e MEs no
+          Brasil, da pré-pandemia ao cenário de 2025–2026: pipeline Python de ponta a ponta, KPIs financeiros e
+          operacionais e recomendações por porte e segmento.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--ghost" href="docs/artigo_tecnico.pdf">Ler o artigo (PDF)</a>
+          <a class="btn btn--primary" href="#graficos">Ver gráficos</a>
+          <a class="btn btn--ghost" href="data/processed/dados_processados_canais_vendas.csv" download>Baixar dados
+            (CSV)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 1: APRENDIZADO ===================== -->
+    <section class="section" id="aprendizado" aria-labelledby="aprendizado-titulo">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Seção 1</p>
+          <h2 id="aprendizado-titulo">Mapeamento de Aprendizado — Curso de Analista de Dados da EBAC</h2>
+          <p class="section__lead">O que estudei no curso e como cada tema foi aplicado neste projeto final, com
+            exemplos tirados do código e dos dados.</p>
+        </header>
+
+        <div class="panel prosa glass reveal">
+          <h3>Variáveis</h3>
+          <p>Aprendi a nomear e guardar valores com clareza, separando constantes de parâmetros, sem números “mágicos”
+            espalhados pelo código. Aqui, todas as constantes ficam em <code>src/config.py</code>: datas das fases,
+            tetos de receita do MEI (R$&nbsp;81&nbsp;mil) e da ME (R$&nbsp;360&nbsp;mil), regra do DAS, tarifas dos
+            canais e sementes da simulação (2026 e 2027). Cada parâmetro tem a origem registrada em
+            <code>outputs/tabelas/premissas.csv</code>.
+          </p>
+
+          <h3>Tipos de Dados</h3>
+          <p>Aprendi a diferenciar inteiros, decimais, texto, datas e booleanos, e a perceber como um tipo errado
+            distorce somas e filtros. O arquivo bruto do painel trazia 8.663 valores no formato <code>1.234,56</code>,
+            1.205 com <code>R$</code> e 1.120 contagens com ponto de milhar, convertidos por
+            <code>parse_numero_br</code> e <code>parse_inteiro</code>. As datas vinham em três formatos
+            (<code>AAAA-MM</code>, <code>MM/AAAA</code> e <code>AAAA-MM-01</code>) e foram unificadas no padrão ISO; as
+            flags, como <code>flag_cenario_atual</code>, foram gravadas como 0 ou 1.
+          </p>
+
+          <h3>Estruturas de Dados</h3>
+          <p>Estudei listas, tuplas, dicionários e conjuntos no Python, além do DataFrame do pandas. No projeto,
+            dicionários guardam os parâmetros da simulação (<code>PARAMETROS</code>) e o mapa de rótulos
+            (<code>MAPA_ROTULOS</code>), listas fixam a ordem de canais, portes e segmentos, uma tupla define os
+            tempos-limite das requisições e conjuntos reúnem os símbolos especiais do IBGE, como <code>X</code>
+            (sigilo). Tudo converge para um DataFrame longo no grão mês × canal × porte × segmento: 104 meses × 3 canais
+            × 2 portes × 5 segmentos = 3.120 linhas.</p>
+
+          <h3>SQL</h3>
+          <p>Aprendi a responder perguntas de negócio com <code>SELECT</code>, <code>WHERE</code>, <code>JOIN</code> e
+            <code>GROUP BY</code>. O projeto não usa banco de dados, mas segue a mesma lógica no pandas: a função
+            <code>agregar</code>, em <code>src/transformacao.py</code>, equivale a um <code>GROUP BY</code> com
+            <code>SUM</code> das medidas aditivas e só depois calcula cada KPI como razão de somas, como o ticket médio
+            = <code>SUM(receita_bruta) / SUM(pedidos)</code>. O recorte do Cenário Atual faz o papel do
+            <code>WHERE</code>, um <code>merge</code> funciona como <code>LEFT JOIN</code>, e as medidas planejadas
+            para o dashboard interativo seguem a mesma regra.
+          </p>
+
+          <h3>Python para Análise de Dados</h3>
+          <p>Estudei funções, módulos, tratamento de erros, pandas, numpy e o consumo de APIs públicas com
+            <code>requests</code>. O pipeline foi dividido em módulos em <code>src/</code> (extração, limpeza,
+            tratamento, transformação e visualização), orquestrados por <code>main.py</code>. A extração faz até 3
+            tentativas por requisição e grava snapshots datados; como a série 433 do Banco Central estava indisponível
+            em 18/10/2026, o pipeline usou automaticamente o IPCA oficial do IBGE (SIDRA 1737). As regras críticas são
+            cobertas por 14 testes com <code>unittest</code>.
+          </p>
+
+          <h3>Limpeza e ETL</h3>
+          <p>Aprendi o ciclo de extrair, limpar, transformar e carregar, documentando cada correção. O arquivo bruto do
+            painel tinha 3.183 linhas e terminou com 3.120: saíram 47 duplicatas exatas e 16 linhas repetidas com outra
+            formatação, 1.092 células ausentes foram imputadas por razões estáveis, e variantes como “MKT”, “Mkt place”
+            e “loja fisica” viraram rótulos padrão. Antes da exportação, uma validação confere colunas, grão, nulos e
+            faixas dos KPIs, e tudo fica registrado em <code>outputs/relatorio_qualidade_dados.json</code>.</p>
+
+          <h3>Visualização de Dados</h3>
+          <p>Aprendi a escolher o gráfico certo para cada pergunta e a cuidar de escalas, cores e rótulos. Em
+            <code>src/visualizacao.py</code>, o pipeline gera os 10 gráficos da galeria com Matplotlib e Seaborn: séries
+            no tempo com as fases sombreadas, barras 100% empilhadas, dispersão em escala logarítmica e mapas de calor,
+            sempre com a mesma cor por canal, números no formato brasileiro e fonte no rodapé. O mesmo CSV final é a
+            base do dashboard interativo, em construção.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 2: PROJETO ===================== -->
+    <section class="section" id="projeto" aria-labelledby="projeto-titulo">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Seção 2</p>
+          <h2 id="projeto-titulo">Apresentação do Projeto Final: transição de canais de venda</h2>
+          <p class="section__lead">Quando compensa a loja física, o marketplace ou o e-commerce próprio — ou uma
+            combinação deles — para microempreendedores individuais e microempresas do varejo?</p>
+        </header>
+
+        <article class="panel panel--problema glass reveal" aria-labelledby="problematica-titulo">
+          <h3 id="problematica-titulo">Problemática</h3>
+          <p>A pandemia empurrou o pequeno varejo para o digital. Em 2026, o microempreendedor ainda decide entre manter
+            o ponto físico, vender em marketplaces (entrada barata, mas comissão alta) ou investir em uma loja virtual
+            própria (margem melhor, mas com custo para atrair clientes). Não existe série pública mensal de receita,
+            custos e clientes por canal para MEIs e MEs: a Pesquisa Mensal de Comércio do IBGE só investiga empresas com
+            20 ou mais pessoas ocupadas. O projeto responde à pergunta com KPIs calculados por razão de somas e uma
+            análise de custo-volume-lucro, deixando claro o que é dado oficial e o que é premissa.</p>
+          <ul class="fases" aria-label="Marcos temporais analisados">
+            <li><strong>Pré-pandemia</strong><span>jan/2018 – fev/2020</span></li>
+            <li><strong>Pandemia</strong><span>mar/2020 – mai/2022</span></li>
+            <li><strong>Pós-pandemia</strong><span>jun/2022 – dez/2024</span></li>
+            <li><strong>Cenário Atual</strong><span>jan/2025 – ago/2026</span></li>
+          </ul>
+        </article>
+
+        <h3 class="subhead reveal">Dados analisados</h3>
+        <div class="grid grid--2">
+          <article class="card card--real glass reveal">
+            <p class="badge badge--real">Dados reais (oficiais)</p>
+            <h4>Indicadores públicos do IBGE e regras oficiais</h4>
+            <ul class="lista">
+              <li>IBGE — Pesquisa Mensal de Comércio (tabelas 8880 e 8882): volume e receita do varejo, total e por
+                atividade.</li>
+              <li>IBGE — Pesquisa Anual de Comércio (tabelas 9349 e 10656): participação da internet nas vendas do
+                varejo, 2019–2024.</li>
+              <li>IPCA mensal do IBGE (SIDRA 1737), usado como deflator; a série 433 do Banco Central estava
+                indisponível na extração (18/10/2026).</li>
+              <li>Regras vigentes: teto do MEI, DAS, Anexo I do Simples Nacional e tarifas oficiais de Mercado Livre,
+                Shopee, Amazon e Nuvemshop.</li>
+            </ul>
+          </article>
+          <article class="card card--sim glass reveal">
+            <p class="badge badge--sim">Dados simulados (calibrados)</p>
+            <h4>Painel de MEIs e MEs por canal de venda</h4>
+            <ul class="lista">
+              <li>Painel mês × canal × porte × segmento (5 segmentos do varejo), jan/2018 a ago/2026, com semente fixa e
+                resultado reproduzível.</li>
+              <li>Sazonalidade e choques reais da PMC por atividade, inflação real e tarifas oficiais como
+                direcionadores.</li>
+              <li>Calibrado contra referências públicas (IBGE/PAC, MDIC e Sebrae): as 6 checagens de calibração
+                passaram.</li>
+              <li>As conclusões valem sob as premissas do painel; receita, custos e clientes por canal são simulados, os
+                índices macro são oficiais.</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 class="subhead reveal" id="pipeline-titulo">Pipeline de dados</h3>
+        <ol class="pipeline reveal" aria-labelledby="pipeline-titulo">
+          <li class="pipeline__step glass">
+            <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false">
+              <path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v3h16v-3" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <strong>1. Extração</strong>
+            <span>APIs do IBGE com snapshots datados e simulação do painel bruto (<code>extracao.py</code>).</span>
+          </li>
+          <li class="pipeline__step glass">
+            <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false">
+              <path d="M4 6h16M7 12h10M10 18h4" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" />
+            </svg>
+            <strong>2. Limpeza</strong>
+            <span>Ausentes, duplicatas, tipos, datas e rótulos padronizados, com relatório de qualidade
+              (<code>limpeza.py</code>).</span>
+          </li>
+          <li class="pipeline__step glass">
+            <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false">
+              <path d="M5 19 19 5M7 7h.01M17 17h.01" fill="none" stroke="currentColor" stroke-width="2.4"
+                stroke-linecap="round" />
+              <circle cx="7" cy="7" r="2.5" fill="none" stroke="currentColor" stroke-width="2" />
+              <circle cx="17" cy="17" r="2.5" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <strong>3. Tratamento</strong>
+            <span>Fases, deflação pelo IPCA, medidas derivadas e KPIs validados por faixa
+              (<code>tratamento.py</code>).</span>
+          </li>
+          <li class="pipeline__step glass">
+            <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false">
+              <path d="M3 5h7v6H3zM14 5h7v6h-7zM8.5 15h7v5h-7zM6.5 11v2h11v-2M12 13v2" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linejoin="round" />
+            </svg>
+            <strong>4. Transformação</strong>
+            <span>Agregações por canal e período, custo-volume-lucro e exportação do CSV final
+              (<code>transformacao.py</code>).</span>
+          </li>
+          <li class="pipeline__step glass">
+            <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false">
+              <path d="M4 20V4M4 20h16M8 16l4-5 3 3 5-7" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <strong>5. Visualização</strong>
+            <span>Geração automática de 10 gráficos PNG com Matplotlib/Seaborn (<code>visualizacao.py</code>).</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== INSIGHTS / KPIs ===================== -->
+    <section class="section" id="insights" aria-labelledby="insights-titulo">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Resultados</p>
+          <h2 id="insights-titulo">Principais insights</h2>
+          <p class="section__lead"><span class="badge badge--sim">Dados simulados (calibrados)</span> KPIs do Cenário
+            Atual (jan/2025 – ago/2026), calculados por razão de somas sobre
+            <code>dados_processados_canais_vendas.csv</code>. A receita real está em reais de ago/2026; CAC, pontos de
+            equilíbrio e receitas de indiferença estão em reais correntes.
+          </p>
+        </header>
+
+        <div class="grid grid--kpi">
+          <article class="kpi-card glass reveal">
+            <p class="kpi-card__label">Participação digital na receita real</p>
+            <p class="kpi-card__valor"><span class="kpi" data-valor="33.3" data-casas="1" data-sufixo="%">33,3%</span>
+            </p>
+            <p class="kpi-card__nota">Marketplace + E-commerce Próprio. Era 10,3% na Pré-pandemia; a Loja Física caiu de
+              89,7% para 66,7%.</p>
+          </article>
+          <article class="kpi-card glass reveal">
+            <p class="kpi-card__label">Take rate do Marketplace</p>
+            <p class="kpi-card__valor"><span class="kpi" data-valor="14.2" data-casas="1" data-sufixo="%">14,2%</span>
+            </p>
+            <p class="kpi-card__nota">Comissões e tarifas sobre a receita. No E-commerce Próprio, 2,8%; na Loja Física,
+              1,4%.</p>
+          </article>
+          <article class="kpi-card glass reveal">
+            <p class="kpi-card__label">Margem líquida estimada do Marketplace</p>
+            <p class="kpi-card__valor"><span class="kpi" data-valor="2.7" data-casas="1" data-sufixo="%">2,7%</span></p>
+            <p class="kpi-card__nota">Contra 6,4% na Loja Física e 5,0% no E-commerce Próprio.</p>
+          </article>
+          <article class="kpi-card glass reveal">
+            <p class="kpi-card__label">CAC do E-commerce Próprio</p>
+            <p class="kpi-card__valor"><span class="kpi" data-valor="27.53" data-casas="2"
+                data-prefixo="R$&nbsp;">R$&nbsp;27,53</span></p>
+            <p class="kpi-card__nota">Por cliente novo. No Marketplace, R$&nbsp;8,59; na Loja Física, R$&nbsp;6,19.</p>
+          </article>
+          <article class="kpi-card glass reveal">
+            <p class="kpi-card__label">LTV/CAC do E-commerce Próprio</p>
+            <p class="kpi-card__valor"><span class="kpi" data-valor="2.5" data-casas="1" data-sufixo="×">2,5×</span></p>
+            <p class="kpi-card__nota">Abaixo da referência de 3×. Marketplace: 2,8×; Loja Física: 11,8×.</p>
+          </article>
+          <article class="kpi-card glass reveal">
+            <p class="kpi-card__label">Retenção mensal do E-commerce Próprio</p>
+            <p class="kpi-card__valor"><span class="kpi" data-valor="30.7" data-casas="1" data-sufixo="%">30,7%</span>
+            </p>
+            <p class="kpi-card__nota">Contra 9,4% no Marketplace e 35,7% na Loja Física: o canal próprio depende de
+              recompra.</p>
+          </article>
+        </div>
+
+        <div class="grid grid--2 insights">
+          <article class="card glass reveal">
+            <h3>O choque de 2020 acelerou a migração</h3>
+            <p>Dado oficial: o volume do varejo (PMC, com ajuste sazonal) caiu 19,7% entre fev/2020 e abr/2020. No
+              painel, a receita real da Loja Física caiu 38,7% no mesmo intervalo, enquanto a dos canais digitais subiu
+              87,1%. A participação física não voltou ao nível de 2019.</p>
+          </article>
+          <article class="card glass reveal">
+            <h3>O marketplace barateia a entrada, mas cobra na margem</h3>
+            <p>Para o MEI, o ponto de equilíbrio mensal no Marketplace é de R$&nbsp;2.986,93, contra R$&nbsp;3.811,80
+              na Loja Física. Em compensação, os custos variáveis consomem 85,6% da receita no Marketplace e 64,8% na
+              Loja
+              Física.</p>
+          </article>
+          <article class="card glass reveal">
+            <h3>A escala decide o canal</h3>
+            <p>Para o MEI, o Marketplace supera o E-commerce Próprio abaixo de R$&nbsp;1.619,18 de receita mensal, e a
+              Loja Física supera o E-commerce Próprio acima de R$&nbsp;5.256,34. O MEI médio fatura R$&nbsp;4.592,23 por
+              mês, faixa em que o canal próprio tende a render mais.</p>
+          </article>
+          <article class="card glass reveal">
+            <h3>Recomendação por porte e segmento</h3>
+            <p>Das 10 combinações porte × segmento, 5 apontam o E-commerce Próprio, 4 indicam modelo híbrido e 1 (MEI de
+              Alimentos e Bebidas) aponta a Loja Física. Pano de fundo oficial: IPCA acumulado de 55,26% entre jan/2018
+              e ago/2026, que corroeu o teto do MEI de R$&nbsp;81&nbsp;mil.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALERIA ===================== -->
+    <section class="section" id="graficos" aria-labelledby="graficos-titulo">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Visualização</p>
+          <h2 id="graficos-titulo">Galeria de gráficos</h2>
+          <p class="section__lead">Os 10 gráficos produzidos pelo pipeline. Selecione um gráfico para ampliar.</p>
+        </header>
+
+        <div class="filtros" role="group" aria-label="Filtrar gráficos por tema" hidden>
+          <button type="button" class="chip" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="chip" data-filtro="receita" aria-pressed="false">Receita</button>
+          <button type="button" class="chip" data-filtro="custos" aria-pressed="false">Custos e margem</button>
+          <button type="button" class="chip" data-filtro="clientes" aria-pressed="false">Clientes</button>
+          <button type="button" class="chip" data-filtro="real" aria-pressed="false">Contexto real</button>
+        </div>
+
+        <ul class="galeria" id="galeria">
+          <li class="galeria__item glass reveal" data-categoria="receita">
+            <a class="galeria__link" href="outputs/graficos/01_receita_real_por_canal.png">
+              <img src="outputs/graficos/01_receita_real_por_canal.png" width="1904" height="1038" loading="lazy"
+                alt="Linhas mensais da receita real por canal de 2018 a 2026: a Loja Física despenca em abril de 2020 enquanto Marketplace e E-commerce Próprio sobem e se mantêm acima do nível pré-pandemia.">
+              <span class="galeria__cap"><strong>01</strong> Receita real por canal</span>
+            </a>
+          </li>
+          <li class="galeria__item glass reveal" data-categoria="receita">
+            <a class="galeria__link" href="outputs/graficos/02_participacao_canal_por_fase.png">
+              <img src="outputs/graficos/02_participacao_canal_por_fase.png" width="1745" height="1038" loading="lazy"
+                alt="Barras 100% empilhadas da participação dos canais na receita real por fase: a Loja Física passa de 89,7% na Pré-pandemia para 66,7% no Cenário Atual; o Marketplace chega a 21,4% e o E-commerce Próprio a 11,9%.">
+              <span class="galeria__cap"><strong>02</strong> Participação dos canais por fase</span>
+            </a>
+          </li>
+          <li class="galeria__item glass reveal" data-categoria="custos">
+            <a class="galeria__link" href="outputs/graficos/03_composicao_custos_margem_por_canal.png">
+              <img src="outputs/graficos/03_composicao_custos_margem_por_canal.png" width="2220" height="999"
+                loading="lazy"
+                alt="Barras horizontais com a composição dos custos e da margem líquida em percentual da receita, por canal, para MEI e ME no Cenário Atual: CMV, comissões e tarifas, frete subsidiado, marketing, custos fixos, impostos e margem líquida.">
+              <span class="galeria__cap"><strong>03</strong> Composição de custos e margem</span>
+            </a>
+          </li>
+          <li class="galeria__item glass reveal" data-categoria="clientes">
+            <a class="galeria__link" href="outputs/graficos/04_dispersao_cac_ltv.png">
+              <img src="outputs/graficos/04_dispersao_cac_ltv.png" width="1822" height="1149" loading="lazy"
+                alt="Dispersão em escala logarítmica do CAC contra o LTV no Cenário Atual para 30 combinações de canal, porte e segmento, com as retas LTV igual a CAC e LTV igual a 3 vezes o CAC; os pontos da Loja Física ficam bem acima da reta de 3 vezes.">
+              <span class="galeria__cap"><strong>04</strong> Dispersão CAC × LTV</span>
+            </a>
+          </li>
+          <li class="galeria__item glass reveal" data-categoria="clientes">
+            <a class="galeria__link" href="outputs/graficos/05_ticket_medio_canal_fase.png">
+              <img src="outputs/graficos/05_ticket_medio_canal_fase.png" width="1904" height="1038" loading="lazy"
+                alt="Barras agrupadas do ticket médio real por canal e fase: o E-commerce Próprio tem o maior ticket, R$ 153,95 no Cenário Atual, contra R$ 113,85 no Marketplace e R$ 106,35 na Loja Física.">
+              <span class="galeria__cap"><strong>05</strong> Ticket médio por canal e fase</span>
+            </a>
+          </li>
+          <li class="galeria__item glass reveal" data-categoria="clientes">
+            <a class="galeria__link" href="outputs/graficos/06_taxa_retencao_tempo.png">
+              <img src="outputs/graficos/06_taxa_retencao_tempo.png" width="1904" height="1038" loading="lazy"
+                alt="Linhas mensais da taxa de retenção por canal com média móvel de 3 meses: Loja Física perto de 35%, E-commerce Próprio subindo para cerca de 30% e Marketplace abaixo de 10%.">
+              <span class="galeria__cap"><strong>06</strong> Taxa de retenção no tempo</span>
+            </a>
+          </li>
+          <li class="galeria__item glass reveal" data-categoria="custos">
+            <a class="galeria__link" href="outputs/graficos/07_take_rate_marketplace_vs_cac_ecommerce.png">
+              <img src="outputs/graficos/07_take_rate_marketplace_vs_cac_ecommerce.png" width="1852" height="1853"
+                loading="lazy"
+                alt="Dois painéis: acima, take rate mensal do Marketplace contra o custo de marketing e as tarifas do E-commerce Próprio em percentual da receita; abaixo, take rate efetivo por valor do item segundo as regras oficiais de 2026 do Mercado Livre, da Shopee e da Amazon.">
+              <span class="galeria__cap"><strong>07</strong> Take rate × custo de aquisição</span>
+            </a>
+          </li>
+          <li class="galeria__item glass reveal" data-categoria="custos">
+            <a class="galeria__link" href="outputs/graficos/08_heatmap_margem_canal_porte.png">
+              <img src="outputs/graficos/08_heatmap_margem_canal_porte.png" width="2116" height="905" loading="lazy"
+                alt="Dois mapas de calor da margem líquida por canal e porte, Pré-pandemia e Cenário Atual: todas as margens caem no período, e o Marketplace da ME tem a menor margem atual, 1,8%.">
+              <span class="galeria__cap"><strong>08</strong> Mapa de calor da margem</span>
+            </a>
+          </li>
+          <li class="galeria__item glass reveal" data-categoria="real">
+            <a class="galeria__link" href="outputs/graficos/09_contexto_macro_real.png">
+              <img src="outputs/graficos/09_contexto_macro_real.png" width="1826" height="2408" loading="lazy"
+                alt="Três painéis com dados oficiais do IBGE: índice de volume do varejo com queda em abril de 2020, IPCA mensal e acumulado em 12 meses, e participação da internet na receita do varejo de 2019 a 2024.">
+              <span class="galeria__cap"><strong>09</strong> Contexto macroeconômico real</span>
+            </a>
+          </li>
+          <li class="galeria__item glass reveal" data-categoria="custos">
+            <a class="galeria__link" href="outputs/graficos/10_ponto_equilibrio_canal.png">
+              <img src="outputs/graficos/10_ponto_equilibrio_canal.png" width="2379" height="1092" loading="lazy"
+                alt="Diagrama de custo-volume-lucro para MEI e ME no Cenário Atual: uma reta de margem por canal, pontos de equilíbrio e receitas de indiferença; para o MEI, equilíbrio em R$ 3,8 mil na Loja Física, R$ 3,0 mil no Marketplace e R$ 2,6 mil no E-commerce Próprio.">
+              <span class="galeria__cap"><strong>10</strong> Ponto de equilíbrio por canal</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== DASHBOARD ===================== -->
+    <section class="section" id="dashboard" aria-labelledby="dashboard-titulo">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Business Intelligence</p>
+          <h2 id="dashboard-titulo">Pré-visualização do dashboard</h2>
+          <p class="section__lead">Prévia das cinco páginas planejadas para o dashboard interativo, montada com as
+            imagens estáticas produzidas pelo pipeline.</p>
+        </header>
+
+        <div class="dash-cta reveal">
+          <!-- COLE AQUI O LINK DO SEU DASHBOARD: preencha a constante LINK_DASHBOARD na primeira linha de assets/js/main.js com o link publicado do dashboard. Enquanto ela estiver vazia, a página mostra apenas o aviso abaixo, sem link. -->
+          <a class="dash-status" id="link-dashboard"><span class="dot dot--laranja" aria-hidden="true"></span>Dashboard
+            em construção</a>
+          <p class="dash-cta__nota">O CSV final está pronto para ingestão em ferramentas de BI.</p>
+        </div>
+
+        <div class="tabs glass reveal">
+          <div class="tabs__list" role="tablist" aria-label="Páginas do dashboard" hidden>
+            <button type="button" class="tab" role="tab" id="tab-p1" aria-controls="painel-p1" aria-selected="true">1.
+              Visão Executiva</button>
+            <button type="button" class="tab" role="tab" id="tab-p2" aria-controls="painel-p2" aria-selected="false"
+              tabindex="-1">2. Rentabilidade</button>
+            <button type="button" class="tab" role="tab" id="tab-p3" aria-controls="painel-p3" aria-selected="false"
+              tabindex="-1">3. Aquisição e Retenção</button>
+            <button type="button" class="tab" role="tab" id="tab-p4" aria-controls="painel-p4" aria-selected="false"
+              tabindex="-1">4. Contexto Macro</button>
+            <button type="button" class="tab" role="tab" id="tab-p5" aria-controls="painel-p5" aria-selected="false"
+              tabindex="-1">5. Recomendação</button>
+          </div>
+
+          <div class="tab-panel" id="painel-p1" aria-labelledby="tab-p1">
+            <h3>Página 1 — Visão Executiva</h3>
+            <p class="mensagem"><strong>Mensagem:</strong> a pandemia acelerou a migração para o digital, e a
+              participação da Loja Física não voltou ao nível de 2019.</p>
+            <div class="tab-panel__imgs">
+              <img src="outputs/graficos/01_receita_real_por_canal.png" width="1904" height="1038" loading="lazy"
+                alt="Receita real mensal por canal, 2018 a 2026, com a queda da Loja Física em 2020 e a alta dos canais digitais.">
+              <img src="outputs/graficos/02_participacao_canal_por_fase.png" width="1745" height="1038" loading="lazy"
+                alt="Participação dos canais na receita real por fase, com a Loja Física recuando de 89,7% para 66,7%.">
+            </div>
+          </div>
+
+          <div class="tab-panel" id="painel-p2" aria-labelledby="tab-p2">
+            <h3>Página 2 — Rentabilidade por Canal</h3>
+            <p class="mensagem"><strong>Mensagem:</strong> o marketplace barateia a entrada, mas cobra na margem.</p>
+            <div class="tab-panel__imgs">
+              <img src="outputs/graficos/03_composicao_custos_margem_por_canal.png" width="2220" height="999"
+                loading="lazy" alt="Composição de custos e margem líquida por canal, MEI e ME, no Cenário Atual.">
+              <img src="outputs/graficos/07_take_rate_marketplace_vs_cac_ecommerce.png" width="1852" height="1853"
+                loading="lazy"
+                alt="Take rate do Marketplace contra o custo de aquisição do E-commerce Próprio e tarifas oficiais de 2026 por valor do item.">
+              <img src="outputs/graficos/08_heatmap_margem_canal_porte.png" width="2116" height="905" loading="lazy"
+                alt="Mapas de calor da margem líquida por canal e porte na Pré-pandemia e no Cenário Atual.">
+            </div>
+          </div>
+
+          <div class="tab-panel" id="painel-p3" aria-labelledby="tab-p3">
+            <h3>Página 3 — Aquisição e Retenção (CAC × LTV)</h3>
+            <p class="mensagem"><strong>Mensagem:</strong> o canal próprio só se paga com recompra.</p>
+            <div class="tab-panel__imgs">
+              <img src="outputs/graficos/04_dispersao_cac_ltv.png" width="1822" height="1149" loading="lazy"
+                alt="Dispersão CAC contra LTV no Cenário Atual, com as retas de referência LTV igual a CAC e igual a 3 vezes o CAC.">
+              <img src="outputs/graficos/05_ticket_medio_canal_fase.png" width="1904" height="1038" loading="lazy"
+                alt="Ticket médio real por canal e fase, maior no E-commerce Próprio.">
+              <img src="outputs/graficos/06_taxa_retencao_tempo.png" width="1904" height="1038" loading="lazy"
+                alt="Taxa de retenção mensal por canal ao longo do tempo.">
+            </div>
+          </div>
+
+          <div class="tab-panel" id="painel-p4" aria-labelledby="tab-p4">
+            <h3>Página 4 — Contexto Macroeconômico (somente dados oficiais)</h3>
+            <p class="mensagem"><strong>Mensagem:</strong> o choque de 2020 e a inflação acumulada são fatos oficiais e
+              formam o pano de fundo de toda decisão de canal.</p>
+            <div class="tab-panel__imgs">
+              <img src="outputs/graficos/09_contexto_macro_real.png" width="1826" height="2408" loading="lazy"
+                alt="Volume do varejo, IPCA e participação da internet nas vendas do varejo, segundo o IBGE.">
+            </div>
+          </div>
+
+          <div class="tab-panel" id="painel-p5" aria-labelledby="tab-p5">
+            <h3>Página 5 — Recomendação</h3>
+            <p class="mensagem"><strong>Mensagem:</strong> o melhor canal depende do faturamento mensal: o marketplace
+              protege quem vende pouco, o e-commerce próprio rende mais na faixa do MEI médio e a loja física só vence
+              com receita alta.</p>
+            <div class="tab-panel__imgs">
+              <img src="outputs/graficos/10_ponto_equilibrio_canal.png" width="2379" height="1092" loading="lazy"
+                alt="Pontos de equilíbrio e receitas de indiferença entre canais para MEI e ME no Cenário Atual.">
+            </div>
+          </div>
+
+          <p class="tabs__nota">Imagens estáticas produzidas pelo pipeline; o dashboard interativo está em
+            construção.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RELATÓRIOS ===================== -->
+    <section class="section" id="relatorios" aria-labelledby="relatorios-titulo">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Entregáveis</p>
+          <h2 id="relatorios-titulo">Relatórios e arquivos</h2>
+          <p class="section__lead">Os dados processados e o artigo técnico do projeto. O CSV está pronto para ingestão
+            em ferramentas de BI.</p>
+        </header>
+
+        <ul class="grid grid--3">
+          <li class="doc glass reveal">
+            <h3>Dados processados (CSV)</h3>
+            <p><code>dados_processados_canais_vendas.csv</code>: 3.120 linhas × 59 colunas no grão mês × canal × porte ×
+              segmento, UTF-8 e ponto decimal.</p>
+            <a class="btn btn--ghost" href="data/processed/dados_processados_canais_vendas.csv" download>Baixar o
+              CSV</a>
+          </li>
+          <li class="doc glass reveal">
+            <h3>Artigo técnico (PDF)</h3>
+            <p>Estudo completo: referencial, metodologia, resultados e recomendação estratégica
+              (<code>docs/artigo_tecnico.pdf</code>).</p>
+            <a class="btn btn--ghost" href="docs/artigo_tecnico.pdf">Abrir o PDF</a>
+          </li>
+          <li class="doc glass reveal">
+            <h3>Artigo técnico (Markdown)</h3>
+            <p>Versão do artigo para leitura direta no GitHub (<code>docs/ARTIGO_TECNICO.md</code>).</p>
+            <a class="btn btn--ghost" href="docs/ARTIGO_TECNICO.md">Abrir o Markdown</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CONCLUSÃO ===================== -->
+    <section class="section" id="conclusao" aria-labelledby="conclusao-titulo">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Veredito</p>
+          <h2 id="conclusao-titulo">Conclusão</h2>
+        </header>
+
+        <div class="panel panel--destaque glass reveal">
+          <p class="veredito">No Cenário Atual (2025–2026), o <strong>E-commerce Próprio</strong> é o canal que mais
+            compensa para MEIs e MEs. Ele está em 9 das 10 recomendações por porte × segmento: sozinho em 5 e como parte
+            das outras 4, que são híbridas.</p>
+          <p class="panel__nota"><span class="badge badge--sim">Dados simulados (calibrados)</span> Estes resultados vêm
+            do painel simulado e calibrado com dados oficiais do IBGE; não são medições de empresas reais.</p>
+        </div>
+
+        <ul class="grid grid--2 apoio">
+          <li class="card glass reveal">
+            <h3>5 de 10: só o E-commerce Próprio</h3>
+            <ul class="lista">
+              <li>MEI: Moda e Acessórios, Casa e Decoração e Eletrônicos e Acessórios.</li>
+              <li>ME: Moda e Acessórios e Eletrônicos e Acessórios.</li>
+            </ul>
+          </li>
+          <li class="card glass reveal">
+            <h3>4 de 10: híbridos com o E-commerce Próprio</h3>
+            <ul class="lista">
+              <li>MEI de Beleza e Cuidados Pessoais: Loja Física + E-commerce Próprio.</li>
+              <li>ME de Casa e Decoração: Marketplace + E-commerce Próprio.</li>
+              <li>ME de Beleza e Cuidados Pessoais: E-commerce Próprio + Loja Física.</li>
+              <li>ME de Alimentos e Bebidas: Loja Física + E-commerce Próprio.</li>
+            </ul>
+          </li>
+          <li class="card glass reveal">
+            <h3>Marketplace: porta de entrada</h3>
+            <p>Compensa mais que o E-commerce Próprio só abaixo de R$&nbsp;1.619,18 de receita por mês no MEI e de
+              R$&nbsp;11.246,39 na ME.</p>
+          </li>
+          <li class="card glass reveal">
+            <h3>Loja Física: exceção e escala</h3>
+            <p>Vence sozinha apenas no MEI de Alimentos e Bebidas e só supera o E-commerce Próprio acima de
+              R$&nbsp;5.256,34 por mês no MEI e de R$&nbsp;23.443,58 na ME.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer glass">
+    <div class="container footer__inner">
+      <p><strong>Kevyn Bezerra Ladislau</strong> · <a href="https://github.com/KevynFirst" target="_blank"
+          rel="noopener">github.com/KevynFirst<span class="sr-only"> (abre em nova aba)</span></a></p>
+      <p class="footer__nota">Medidas de canais simuladas e calibradas; indicadores macro oficiais.</p>
+      <p class="footer__nota">© <span id="ano">2026</span> · <a href="#topo">Voltar ao topo</a></p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-titulo">
+    <div class="lightbox__inner">
+      <div class="lightbox__bar">
+        <p class="lightbox__titulo" id="lightbox-titulo">Gráfico</p>
+        <button type="button" class="lightbox__btn" data-acao="anterior" aria-label="Gráfico anterior">‹</button>
+        <button type="button" class="lightbox__btn" data-acao="proximo" aria-label="Próximo gráfico">›</button>
+        <button type="button" class="lightbox__btn" data-acao="fechar" aria-label="Fechar">×</button>
+      </div>
+      <img class="lightbox__img" src="outputs/graficos/01_receita_real_por_canal.png" alt="">
+    </div>
+  </dialog>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
