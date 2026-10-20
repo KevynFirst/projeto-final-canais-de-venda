@@ -11,14 +11,13 @@ Kevyn Bezerra Ladislau – GitHub: https://github.com/KevynFirst
 
 Projeto final do curso **Profissão: Análise de Dados**, da EBAC.
 
-Pipeline Python de ponta a ponta que combina dados oficiais do IBGE com um painel simulado e calibrado de micro e pequenos varejistas para responder quando compensa vender pela loja física, pelo marketplace, pelo e-commerce próprio ou por uma combinação desses canais.
+Pipeline Python de ponta a ponta que combina dados oficiais do IBGE com um painel simulado e calibrado de micro e pequenos varejistas para investigar quando compensa vender pela loja física, pelo marketplace, pelo e-commerce próprio ou por uma combinação desses canais. Este README apresenta o problema, a pergunta de pesquisa e como o projeto foi construído. **A resposta está no [artigo técnico](docs/artigo_tecnico.pdf) e na [página do projeto](https://kevynfirst.github.io/projeto-final-canais-de-venda/).**
 
 ## Sumário
 
 - [Visão geral](#visão-geral)
 - [O problema e a pergunta de pesquisa](#o-problema-e-a-pergunta-de-pesquisa)
-- [Resolução do problema](#resolução-do-problema)
-- [Resultados-chave](#resultados-chave)
+- [Onde está a resposta](#onde-está-a-resposta)
 - [Arquitetura do pipeline](#arquitetura-do-pipeline)
 - [Estrutura do repositório](#estrutura-do-repositório)
 - [Fontes de dados](#fontes-de-dados)
@@ -64,9 +63,9 @@ Falta evidência pública para orientar essa decisão. A PMC só investiga empre
 
 **Pergunta de pesquisa:** sob quais condições de escala de receita, margem, taxa de intermediação (*take rate*), custo de aquisição de clientes (CAC) e retenção a loja física, o marketplace, o e-commerce próprio ou uma combinação deles maximiza o resultado de MEIs e MEs do varejo, e como essa resposta mudou entre a pré-pandemia e o cenário de 2025–2026?
 
-## Resolução do problema
+## Onde está a resposta
 
-A resposta à pergunta está em três entregas, todas construídas sobre as saídas do pipeline.
+A resposta à pergunta de pesquisa não está neste README: ela é desenvolvida e justificada no artigo técnico e resumida na página do projeto. As três entregas abaixo foram construídas sobre as saídas do pipeline.
 
 ### 1. Dashboard interativo (Google Looker Studio)
 
@@ -93,76 +92,6 @@ Os dois players também estão na [página do projeto](https://kevynfirst.github
 **[kevynfirst.github.io/projeto-final-canais-de-venda](https://kevynfirst.github.io/projeto-final-canais-de-venda/)** · [código da página (`index.html`)](index.html)
 
 Página de portfólio publicada no GitHub Pages, com o mapeamento de aprendizado do curso, a apresentação do projeto, os principais insights, a galeria de gráficos, os arquivos para download e a conclusão. Usa apenas HTML, CSS e JavaScript, sem bibliotecas externas.
-
-## Resultados-chave
-
-> Resultados do **painel simulado e calibrado** no Cenário Atual (jan/2025–ago/2026), salvo quando marcados como dado oficial. Os números foram lidos das [tabelas de apoio](#tabelas-de-apoio) em `outputs/tabelas/`, e os KPIs do painel são calculados por razão de somas.
-
-### Veredito
-
-No Cenário Atual (2025–2026), o **e-commerce próprio é o canal que mais compensa** para MEIs e MEs do varejo: ele aparece em **9 das 10 recomendações porte × segmento**, sozinho em 5 e em híbridos nos outros 4.
-
-- **Marketplace, a porta de entrada:** compensa mais que o e-commerce próprio só abaixo de **R$ 1.619,18/mês no MEI** e de **R$ 11.246,39/mês na ME**. Nessa faixa, nenhum canal ainda cobre os próprios custos, e o marketplace só perde menos, graças ao menor custo fixo.
-- **Loja física, exceção e escala:** supera o e-commerce próprio só acima de **R$ 5.256,34/mês no MEI** e de **R$ 23.443,58/mês na ME** (perto de 78% do teto anual de cada regime) e vence sozinha só para o **MEI em Alimentos e Bebidas**.
-- **E-commerce próprio, a faixa do negócio médio:** a receita média por negócio fica entre esses limiares nos dois portes (R$ 4.592,23/mês no MEI e R$ 20.164,71/mês na ME). Nessa receita, o canal próprio deixa R$ 379,26/mês no MEI, contra R$ 274,41 da loja física e R$ 230,80 do marketplace; na ME, deixa R$ 1.026,65/mês, contra R$ 598,73 do marketplace e R$ 509,27 da loja física.
-
-**Faixas de decisão por receita mensal por negócio** ([`receita_indiferenca_canais.csv`](outputs/tabelas/receita_indiferenca_canais.csv)):
-
-| Porte | Marketplace deixa mais margem | E-commerce Próprio deixa mais margem | Loja Física deixa mais margem |
-|---|---|---|---|
-| MEI | abaixo de R$ 1.619,18 | de R$ 1.619,18 a R$ 5.256,34 | acima de R$ 5.256,34 |
-| ME | abaixo de R$ 11.246,39 | de R$ 11.246,39 a R$ 23.443,58 | acima de R$ 23.443,58 |
-
-O cruzamento entre Loja Física e Marketplace (R$ 4.382,43 no MEI e R$ 20.599,49 na ME) cai dentro da faixa do e-commerce próprio, que supera os dois nesse nível de receita.
-
-**Matriz de recomendação por porte e segmento** ([`matriz_recomendacao.csv`](outputs/tabelas/matriz_recomendacao.csv)):
-
-| Porte | Segmento | Recomendação | 1º canal (margem em R$ por mês) | 2º canal (margem em R$ por mês) | Vantagem (p.p.) |
-|---|---|---|---|---|---|
-| MEI | Moda e Acessórios | E-commerce Próprio | E-commerce Próprio (604,72) | Marketplace (506,82) | 2,05 |
-| MEI | Casa e Decoração | E-commerce Próprio | E-commerce Próprio (335,16) | Marketplace (275,51) | 1,37 |
-| MEI | Eletrônicos e Acessórios | E-commerce Próprio | E-commerce Próprio (234,05) | Loja Física (41,19) | 5,17 |
-| MEI | Beleza e Cuidados Pessoais | Híbrido: Loja Física + E-commerce Próprio | Loja Física (196,69) | E-commerce Próprio (195,22) | 0,03 |
-| MEI | Alimentos e Bebidas | Loja Física | Loja Física (584,66) | E-commerce Próprio (495,54) | 1,56 |
-| ME | Moda e Acessórios | E-commerce Próprio | E-commerce Próprio (1.916,10) | Marketplace (1.613,79) | 1,46 |
-| ME | Casa e Decoração | Híbrido: Marketplace + E-commerce Próprio | Marketplace (978,84) | E-commerce Próprio (836,55) | 0,74 |
-| ME | Eletrônicos e Acessórios | E-commerce Próprio | E-commerce Próprio (713,22) | Loja Física (−134,28) | 5,05 |
-| ME | Beleza e Cuidados Pessoais | Híbrido: E-commerce Próprio + Loja Física | E-commerce Próprio (253,03) | Loja Física (237,63) | 0,08 |
-| ME | Alimentos e Bebidas | Híbrido: Loja Física + E-commerce Próprio | Loja Física (1.421,38) | E-commerce Próprio (1.232,48) | 0,76 |
-
-Margem estimada na receita média por negócio do porte e do segmento, com margem = R × (1 − v) − F. O 1º canal é recomendado quando a vantagem sobre o 2º é de pelo menos 1,0 ponto percentual dessa receita (limiar de materialidade definido pelo autor); abaixo disso, a recomendação é híbrida.
-
-### Indicadores por canal no Cenário Atual
-
-| Indicador | Loja Física | Marketplace | E-commerce Próprio |
-|---|---|---|---|
-| Participação na receita real | 66,69% | 21,40% | 11,91% |
-| Take rate (comissões e tarifas ÷ receita) | 1,37% | 14,22% | 2,82% |
-| Margem líquida realizada | 6,39% | 2,71% | 5,03% |
-| CAC (reais correntes por cliente novo) | R$ 6,19 | R$ 8,59 | R$ 27,53 |
-| Retenção mensal | 35,66% | 9,42% | 30,66% |
-| LTV (reais correntes) | R$ 73,03 | R$ 23,82 | R$ 68,10 |
-| LTV/CAC | 11,80 | 2,77 | 2,47 |
-| Ticket médio real (R$ de ago/2026) | R$ 106,35 | R$ 113,85 | R$ 153,95 |
-| Ponto de equilíbrio do MEI (por mês) | R$ 3.811,80 | R$ 2.986,93 | R$ 2.634,34 |
-| Ponto de equilíbrio da ME (por mês) | R$ 18.480,16 | R$ 13.962,75 | R$ 13.060,91 |
-
-Fontes: [`kpis_recorte_canal.csv`](outputs/tabelas/kpis_recorte_canal.csv) e [`cvp_parametros_atual.csv`](outputs/tabelas/cvp_parametros_atual.csv). Duas leituras pedem cuidado. A margem realizada mistura canal e escala: a Loja Física do MEI tem a maior margem realizada (9,13%) porque seus negócios faturam mais (R$ 5.149,23/mês, contra R$ 3.719,76 no canal próprio), enquanto a comparação na mesma receita (faixas de decisão e matriz acima) isola a economia do canal. Já o LTV/CAC alto da Loja Física é em grande parte efeito contábil, porque o tráfego de passagem é pago pelo aluguel, registrado em custos fixos.
-
-### Transição e contexto
-
-- **Migração para o digital (painel):** a participação digital na receita real passa de 10,31% na Pré-pandemia para 33,31% no Cenário Atual. A Loja Física cai de 89,69% para 66,69%, o Marketplace sobe de 6,18% para 21,40% e o E-commerce Próprio, de 4,13% para 11,91%.
-- **Choque de 2020:** no dado oficial, o volume do varejo com ajuste sazonal (PMC 8880) caiu 19,67% entre fev/2020 e abr/2020. No painel, a receita real da Loja Física caiu 38,71% no mesmo intervalo, e a dos canais digitais subiu 87,10%.
-- **Margens mais estreitas (painel):** a margem líquida do conjunto recua de 8,15% para 5,44% da receita entre a Pré-pandemia e o Cenário Atual. A maior queda é a do Marketplace da ME, de 5,35% para 1,85%.
-- **Contexto oficial (IBGE):** a Internet passou de 5,26% (2019) para 9,78% (2024, série nova) da receita do varejo com 20 ou mais pessoas ocupadas, e a receita via Internet subiu de R$ 67,79 bilhões para R$ 217,91 bilhões (×3,21). O IPCA acumulado de jan/2018 a ago/2026 foi de 55,26%, o que reduz o teto de R$ 81.000 do MEI, fixo desde 2018, a R$ 52.171,26 em poder de compra de dez/2017.
-
-### Recomendação por estágio do negócio
-
-- **Entrada** (abaixo de R$ 1.619,18/mês no MEI ou de R$ 11.246,39/mês na ME): marketplace, para validar sortimento, preço e demanda com pouco capital, com atenção à tarifa por item nos produtos baratos.
-- **Tração** (entre esses limiares e R$ 5.256,34/mês no MEI ou R$ 23.443,58/mês na ME): levar os clientes recorrentes para o canal próprio (WhatsApp, redes sociais ou loja virtual), com Pix e foco em retenção, mantendo o marketplace como fonte de clientes novos.
-- **Escala** (acima desses limiares): loja física ou operação com vários canais integrados, sobretudo em segmentos de alta retenção e compra local. No MEI, essa faixa fica perto do teto, e a migração para ME precisa ser planejada junto com a mudança de canal.
-
-Esses limiares valem sob as premissas do painel e devem ser lidos como critérios de decisão, e não como previsão para um negócio específico.
 
 ## Arquitetura do pipeline
 
