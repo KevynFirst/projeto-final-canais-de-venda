@@ -949,6 +949,20 @@ ul.grid {
   overflow-wrap: anywhere;
 }
 
+/* Player nativo do navegador, no tema escuro e na largura do cartão */
+.doc .audio {
+  display: block;
+  width: 100%;
+  margin: 4px 0 16px;
+  color-scheme: dark;
+  border-radius: 999px;
+}
+
+.doc .audio:focus-visible {
+  outline: 2px solid var(--verde);
+  outline-offset: 3px;
+}
+
 /* ---------- Conclusão ---------- */
 .panel--destaque {
   border-top: 3px solid var(--verde);

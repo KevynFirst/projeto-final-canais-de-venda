@@ -79,6 +79,15 @@ Em construção: link em breve.
 
 *Loja física, marketplace ou e-commerce próprio? Transição de canais de venda de MEIs e MEs no Brasil entre a pré-pandemia e o cenário de 2025–2026.* Estudo completo, com referencial teórico e evolução do mercado em cada fase, metodologia e matriz de variáveis, resultados e discussão, conclusão com recomendação estratégica e referências.
 
+**Artigo em áudio**, para ouvir no navegador ou baixar:
+
+| Idioma | Ouvir no navegador | Arquivo no repositório |
+|---|---|---|
+| Português | [▶ Ouvir a narração](https://kevynfirst.github.io/projeto-final-canais-de-venda/docs/artigo_tecnico_narracao.mp3) | [`artigo_tecnico_narracao.mp3`](docs/artigo_tecnico_narracao.mp3) (12,9 MB) |
+| Inglês | [▶ *Brazilian Small Business Sales Channels: Physical Store vs. Marketplace vs. Own E-Commerce (2018–2026)*](https://kevynfirst.github.io/projeto-final-canais-de-venda/docs/Brazilian%20Small%20Business%20Sales%20Channels%20Physical%20Store%20vs.%20Marketplace%20vs.%20Own%20E-Commerce%20%282018-2026%29.mp3) | [`Brazilian Small Business Sales Channels ... .mp3`](docs/Brazilian%20Small%20Business%20Sales%20Channels%20Physical%20Store%20vs.%20Marketplace%20vs.%20Own%20E-Commerce%20%282018-2026%29.mp3) (2,2 MB) |
+
+Os dois players também estão na [página do projeto](https://kevynfirst.github.io/projeto-final-canais-de-venda/#audio-titulo), na seção "Relatórios e arquivos".
+
 ### 3. Página do projeto
 
 **[kevynfirst.github.io/projeto-final-canais-de-venda](https://kevynfirst.github.io/projeto-final-canais-de-venda/)** · [código da página (`index.html`)](index.html)
@@ -224,7 +233,9 @@ projeto-final-canais-de-venda/
 │   └── relatorio_qualidade_dados.json
 └── docs/
     ├── ARTIGO_TECNICO.md         # artigo técnico em Markdown
-    └── artigo_tecnico.pdf        # artigo técnico em PDF
+    ├── artigo_tecnico.pdf        # artigo técnico em PDF
+    ├── artigo_tecnico_narracao.mp3                        # narração do artigo em português
+    └── Brazilian Small Business Sales Channels ... .mp3   # narração do artigo em inglês
 ```
 
 ## Fontes de dados
