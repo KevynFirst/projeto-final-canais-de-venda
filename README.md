@@ -24,7 +24,6 @@ Pipeline Python de ponta a ponta que combina dados oficiais do IBGE com um paine
 - [Instalação](#instalação)
 - [Execução](#execução)
 - [Saídas do pipeline](#saídas-do-pipeline)
-- [Gráficos](#gráficos)
 - [Metodologia e fórmulas dos KPIs](#metodologia-e-fórmulas-dos-kpis)
 - [Limitações e próximos passos](#limitações-e-próximos-passos)
 - [Autoria e contato](#autoria-e-contato)
@@ -51,7 +50,7 @@ O pipeline (extração → limpeza → tratamento → transformação → visual
 - **dados oficiais:** Pesquisa Mensal de Comércio (PMC), Pesquisa Anual de Comércio (PAC) e IPCA, do IBGE, além de legislação e tarifas publicadas pelas plataformas;
 - **painel simulado e calibrado:** 2.500 negócios sintéticos (400 MEIs e 100 MEs em cada um de cinco segmentos: Moda e Acessórios, Casa e Decoração, Eletrônicos e Acessórios, Beleza e Cuidados Pessoais, Alimentos e Bebidas), mês a mês, de jan/2018 a ago/2026.
 
-O resultado é um CSV de 3.120 linhas × 59 colunas no grão mês × canal × porte × segmento, pronto para Power BI e Looker Studio, além de 14 tabelas de apoio, 10 gráficos, um artigo técnico e uma página de portfólio. Todos os KPIs são calculados por razão de somas, e a comparação final entre canais usa análise de custo-volume-lucro (ponto de equilíbrio e receita de indiferença).
+O resultado é um CSV de 3.120 linhas × 59 colunas no grão mês × canal × porte × segmento, pronto para Power BI e Looker Studio, além de 14 tabelas de apoio, um artigo técnico e uma página de portfólio. Todos os KPIs são calculados por razão de somas, e a comparação entre canais usa análise de custo-volume-lucro (ponto de equilíbrio e receita de indiferença).
 
 > **Importante:** as medidas por canal (receitas, custos e clientes) vêm de um painel simulado e calibrado e não representam empresas reais. Os indicadores macroeconômicos (PMC, PAC e IPCA) são dados oficiais do IBGE.
 
@@ -91,7 +90,7 @@ Os dois players também estão na [página do projeto](https://kevynfirst.github
 
 **[kevynfirst.github.io/projeto-final-canais-de-venda](https://kevynfirst.github.io/projeto-final-canais-de-venda/)** · [código da página (`index.html`)](index.html)
 
-Página de portfólio publicada no GitHub Pages, com o mapeamento de aprendizado do curso, a apresentação do projeto, os principais insights, a galeria de gráficos, os arquivos para download e a conclusão. Usa apenas HTML, CSS e JavaScript, sem bibliotecas externas.
+Página de portfólio publicada no GitHub Pages, com o mapeamento de aprendizado do curso, a apresentação do projeto, os principais insights, a galeria de gráficos (com os resultados), os arquivos para download e a conclusão. Usa apenas HTML, CSS e JavaScript, sem bibliotecas externas.
 
 ## Arquitetura do pipeline
 
@@ -108,12 +107,11 @@ flowchart LR
     VIS["Etapa 5 · Visualização<br/>src/visualizacao.py"]
     CSV[("CSV para BI<br/>dados_processados_canais_vendas.csv")]
     TAB["14 tabelas de apoio<br/>outputs/tabelas/"]
-    PNG["10 gráficos PNG<br/>outputs/graficos/"]
     BI["Power BI e Looker Studio"]
 
     API --> EXT
     REG --> EXT
-    EXT --> LIM --> TRA --> TRF --> VIS --> PNG
+    EXT --> LIM --> TRA --> TRF --> VIS
     TRF --> CSV --> BI
     TRF --> TAB
 ```
@@ -124,7 +122,7 @@ flowchart LR
 | 2. Limpeza | [`src/limpeza.py`](src/limpeza.py) | converte os sinais convencionais do IBGE, aplica soma estrita na PAC, padroniza rótulos, datas e números, remove duplicatas e imputa ausentes por razão | conferência com o gabarito da injeção de problemas, relatório de qualidade antes e depois |
 | 3. Tratamento | [`src/tratamento.py`](src/tratamento.py) | cria fases e recortes, integra PMC e IPCA, deflaciona valores e calcula medidas derivadas e KPIs | faixas de sanidade linha a linha, tetos legais do MEI e da ME, identidades de clientes |
 | 4. Transformação | [`src/transformacao.py`](src/transformacao.py) | agrega por razão de somas, calcula custo-volume-lucro, monta as 14 tabelas de apoio e exporta o CSV final | grão único e completo, ausência de nulos, tipos conferidos após a gravação |
-| 5. Visualização | [`src/visualizacao.py`](src/visualizacao.py) | produz os 10 gráficos PNG com rodapé de fonte | cores fixas por canal, médias móveis por razão de somas |
+| 5. Visualização | [`src/visualizacao.py`](src/visualizacao.py) | produz os gráficos do projeto, com rodapé de fonte | cores fixas por canal, médias móveis por razão de somas |
 | Orquestração | [`main.py`](main.py) | executa as etapas na ordem, configura o log e devolve o código de saída | erros de extração e de qualidade interrompem a execução com mensagem clara |
 | Configuração | [`src/config.py`](src/config.py) | centraliza caminhos, endpoints, períodos, parâmetros da simulação e a origem de cada premissa | nenhum número fixo espalhado pelos módulos |
 
@@ -147,7 +145,7 @@ projeto-final-canais-de-venda/
 │   ├── limpeza.py                # limpeza dos dados reais e do painel + relatório de qualidade
 │   ├── tratamento.py             # fases, deflação, medidas derivadas e KPIs validados
 │   ├── transformacao.py          # agregações por razão de somas, tabelas e CSV final
-│   └── visualizacao.py           # 10 gráficos PNG
+│   └── visualizacao.py           # gráficos PNG do projeto
 ├── tests/
 │   └── test_unidades.py          # 14 testes unitários (unittest, offline)
 ├── data/
@@ -157,7 +155,7 @@ projeto-final-canais-de-venda/
 │   └── processed/
 │       └── dados_processados_canais_vendas.csv   # CSV final para BI
 ├── outputs/
-│   ├── graficos/                 # 10 gráficos PNG
+│   ├── graficos/                 # gráficos PNG do projeto
 │   ├── tabelas/                  # 14 tabelas de apoio (CSV)
 │   └── relatorio_qualidade_dados.json
 └── docs/
@@ -243,7 +241,7 @@ python main.py --atualizar
 python main.py --nivel-log DEBUG
 ```
 
-- **`python main.py`** roda offline em cerca de 10 a 15 segundos e regenera o arquivo bruto simulado, o relatório de qualidade, o CSV final, as 14 tabelas e os 10 gráficos. O log da execução fica em `outputs/logs/pipeline.log`, gerado localmente e fora do controle de versão. O código de saída é 0 em caso de sucesso e 1 em erro tratado, como snapshot ausente ou violação de qualidade.
+- **`python main.py`** roda offline em cerca de 10 a 15 segundos e regenera o arquivo bruto simulado, o relatório de qualidade, o CSV final, as 14 tabelas e os gráficos do projeto. O log da execução fica em `outputs/logs/pipeline.log`, gerado localmente e fora do controle de versão. O código de saída é 0 em caso de sucesso e 1 em erro tratado, como snapshot ausente ou violação de qualidade.
 - **`python main.py --atualizar`** consulta de novo as seis fontes oficiais. Se uma fonte falhar, o pipeline usa o snapshot anterior válido; para o IPCA, aplica o fallback BCB → IBGE descrito em [Fontes de dados](#fontes-de-dados). O último mês da série é o menor entre o último mês da PMC 8880, da PMC 8882, do IPCA e o mês anterior ao da execução. Com novas divulgações do IBGE, a série se estende sem mudar o código, e os números deste README, calculados com os snapshots de 18/10/2026, podem mudar.
 
 **Testes unitários** (14 testes, offline, em menos de 1 segundo):
@@ -297,50 +295,6 @@ As 14 tabelas de `outputs/tabelas/` sustentam os números do artigo, deste READM
 - [`outputs/relatorio_qualidade_dados.json`](outputs/relatorio_qualidade_dados.json): situação antes e depois da limpeza. O arquivo bruto tinha 3.183 linhas e terminou com 3.120; saíram 47 duplicatas exatas e 16 duplicatas por chave, 1.092 células ausentes foram imputadas por razão, e a conferência com o gabarito foi aprovada. O relatório também conta os sinais convencionais do IBGE ("X" = sigilo, "-" = zero absoluto).
 - [`data/raw/simulado/canais_vendas_bruto.csv`](data/raw/simulado/canais_vendas_bruto.csv): painel exportado como extração de um sistema de gestão, com problemas injetados de forma controlada (datas em três formatos, números em padrão brasileiro, rótulos variantes, duplicatas e células vazias). O [`.meta.json`](data/raw/simulado/canais_vendas_bruto.meta.json) guarda as sementes, os snapshots usados e o gabarito da injeção.
 - `data/raw/api/`: snapshots das APIs oficiais com os respectivos `.meta.json`.
-
-## Gráficos
-
-Os 10 gráficos são gerados por [`src/visualizacao.py`](src/visualizacao.py) e ficam em `outputs/graficos/`.
-
-**01 – Receita real por canal (painel simulado).** Receita mensal em reais de ago/2026, com média móvel de 3 meses e fases sombreadas. Entre fev e abr/2020, a receita real da Loja Física cai 38,71% e a dos canais digitais sobe 87,10%, e o digital não devolve o espaço conquistado.
-
-![Linhas mensais da receita real por canal de 2018 a 2026: a Loja Física despenca em abril de 2020, enquanto Marketplace e E-commerce Próprio sobem e se mantêm acima do nível pré-pandemia](outputs/graficos/01_receita_real_por_canal.png)
-
-**02 – Participação dos canais por fase (painel simulado).** A Loja Física passa de 89,69% da receita real na Pré-pandemia para 66,69% no Cenário Atual; o Marketplace vai de 6,18% para 21,40%, e o E-commerce Próprio, de 4,13% para 11,91%.
-
-![Barras 100% empilhadas da participação de cada canal na receita real nos quatro recortes temporais](outputs/graficos/02_participacao_canal_por_fase.png)
-
-**03 – Composição de custos e margem por canal (painel simulado, Cenário Atual).** Cada canal gasta a receita em um lugar diferente: custo fixo na Loja Física (24,50% da receita no MEI), comissão no Marketplace (14,19%) e marketing mais frete no E-commerce Próprio (11,16% e 8,36%). Margem líquida realizada do MEI: 9,13% na Loja Física, 5,65% no canal próprio e 3,44% no Marketplace.
-
-![Barras horizontais com CMV, comissões, frete, marketing, custos fixos, impostos e margem líquida de cada canal, em percentual da receita, para MEI e ME no Cenário Atual](outputs/graficos/03_composicao_custos_margem_por_canal.png)
-
-**04 – CAC × LTV (painel simulado, Cenário Atual).** As 30 combinações de canal, porte e segmento em escala logarítmica, com as retas LTV = CAC e LTV = 3 × CAC. As 10 combinações da Loja Física ficam acima de 3× (LTV/CAC de 7,40 a 24,41), em parte por efeito contábil, e 16 das 30 combinações atingem LTV/CAC de pelo menos 3.
-
-![Dispersão em escala logarítmica do CAC contra o LTV das 30 combinações de canal, porte e segmento, com as retas LTV igual a CAC e LTV igual a três vezes o CAC](outputs/graficos/04_dispersao_cac_ltv.png)
-
-**05 – Ticket médio real por canal e fase (painel simulado).** O E-commerce Próprio tem o maior ticket em todos os recortes: R$ 153,95 no Cenário Atual, contra R$ 113,85 no Marketplace e R$ 106,35 na Loja Física, em reais de ago/2026.
-
-![Barras agrupadas com o ticket médio real de cada canal nos quatro recortes temporais](outputs/graficos/05_ticket_medio_canal_fase.png)
-
-**06 – Taxa de retenção no tempo (painel simulado).** Média móvel de 3 meses calculada por razão de somas. A retenção do E-commerce Próprio sobe de 22,93% na Pré-pandemia para 30,66% no Cenário Atual (premissa de amadurecimento do relacionamento direto); a do Marketplace fica entre 9,42% e 9,72% nos recortes, e a da Loja Física, entre 34,56% e 35,67%.
-
-![Linhas mensais da taxa de retenção da Loja Física, do Marketplace e do E-commerce Próprio entre 2018 e 2026](outputs/graficos/06_taxa_retencao_tempo.png)
-
-**07 – Take rate do marketplace × custos do e-commerce próprio.** (a) Painel simulado: take rate do Marketplace (14,22% no Cenário Atual) contra o marketing e as tarifas do E-commerce Próprio, em percentual da receita. (b) Regras oficiais de out/2026 aplicadas a um item isolado: um item de R$ 30 paga 32,00% no Mercado Livre Clássico, 35,00% na Shopee CNPJ e 19,17% na Amazon Individual, e na Shopee o custo salta de 25,63% em R$ 79,99 para 34,00% em R$ 80.
-
-![Dois painéis: acima, take rate mensal do Marketplace contra o custo de marketing e as tarifas do E-commerce Próprio; abaixo, take rate efetivo por valor do item segundo as regras de 2026 do Mercado Livre, da Shopee e da Amazon](outputs/graficos/07_take_rate_marketplace_vs_cac_ecommerce.png)
-
-**08 – Mapa de calor da margem líquida (painel simulado).** Margem líquida por canal e porte na Pré-pandemia e no Cenário Atual, por razão de somas. Todas as margens caem, e a maior queda é a do Marketplace da ME, de 5,35% para 1,85%.
-
-![Dois mapas de calor da margem líquida por canal e porte, Pré-pandemia e Cenário Atual](outputs/graficos/08_heatmap_margem_canal_porte.png)
-
-**09 – Contexto macroeconômico real (somente dados oficiais do IBGE).** (a) Volume do varejo com ajuste sazonal (PMC 8880, 2022 = 100): 98,13 em fev/2020, 78,83 em abr/2020 e 108,69 em ago/2026. (b) IPCA mensal e acumulado em 12 meses, com pico de 12,13% em abr/2022. (c) Participação da Internet na receita do varejo com 20 ou mais pessoas ocupadas (PAC): 5,26% em 2019 e 9,78% em 2024 (série nova), com os segmentos só nos anos sem sigilo estatístico.
-
-![Três painéis com dados oficiais do IBGE: índice de volume do varejo com queda em abril de 2020, IPCA mensal e acumulado em 12 meses, e participação da Internet na receita do varejo de 2019 a 2024](outputs/graficos/09_contexto_macro_real.png)
-
-**10 – Ponto de equilíbrio por canal (painel simulado, Cenário Atual).** Diagrama custo-volume-lucro com uma reta de margem por canal, margem = R × (1 − v) − F. No MEI, o ponto de equilíbrio é de R$ 3.811,80 na Loja Física, R$ 2.986,93 no Marketplace e R$ 2.634,34 no E-commerce Próprio; os cruzamentos entre as retas são as receitas de indiferença que definem as faixas de decisão.
-
-![Retas de margem mensal por canal em função da receita por negócio, com os pontos de equilíbrio e as receitas de indiferença para MEI e ME no Cenário Atual](outputs/graficos/10_ponto_equilibrio_canal.png)
 
 ## Metodologia e fórmulas dos KPIs
 
